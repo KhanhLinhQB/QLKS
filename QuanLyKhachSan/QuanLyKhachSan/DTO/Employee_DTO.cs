@@ -8,68 +8,68 @@ namespace QuanLyKhachSan.DTO
 {
     class Employee_DTO
     {
-        private string IdEmployee;
+        private string idEmployee;
 
         public string IdEmployee
         {
-            get { return IdEmployee; }
-            set { IdEmployee = value; }
+            get { return idEmployee; }
+            set { idEmployee = value; }
         }
-        private string IdPosition;
+        private string idPosition;
 
         public string IdPosition
         {
-            get { return IdPosition; }
-            set { IdPosition = value; }
+            get { return idPosition; }
+            set { idPosition = value; }
         }
-        private string NameEmployee;
+        private string nameEmployee;
 
         public string NameEmployee
         {
-            get { return NameEmployee; }
-            set { NameEmployee = value; }
+            get { return nameEmployee; }
+            set { nameEmployee = value; }
         }
-        private DateTime ngaysinh;
+        private DateTime dateOfBirth;
 
         public DateTime DateOfBirth
         {
-            get { return DateOfBirth; }
-            set { DateOfBirth = value; }
+            get { return dateOfBirth; }
+            set { dateOfBirth = value; }
         }
-        private string GenderEmployee;
+        private string genderEmployee;
 
         public string GenderEmployee
         {
-            get { return GenderEmployee; }
-            set { GenderEmployee = value; }
+            get { return genderEmployee; }
+            set { genderEmployee = value; }
         }
         private string PhoneNumber;
 
-        public string PhoneNumber
+        public string phoneNumber
         {
-            get { return PhoneNumber; }
-            set { PhoneNumber = value; }
+            get { return phoneNumber; }
+            set { phoneNumber = value; }
         }
-        private string IdCardEmployee;
+        private string idCardEmployee;
 
         public string IdCardEmployee
         {
-            get { return IdCardEmployee; }
-            set { IdCardEmployee = value; }
+            get { return idCardEmployee; }
+            set { idCardEmployee = value; }
         }
-        private string AddressEmployee;
+        private string addressEmployee;
 
         public string AddressEmployee
         {
-            get { return AddressEmployee; }
-            set { AddressEmployee = value; }
+            get { return addressEmployee; }
+            set { addressEmployee = value; }
         }
-        private string EmailEmployee;
+        private string emailEmployee;
 
         public string EmailEmployee
         {
-            get { return EmailEmployee; }
-            set { EmailEmployee = value; }
+            get { return emailEmployee; }
+            set { emailEmployee = value; }
         }
 
     }

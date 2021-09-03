@@ -8,19 +8,19 @@ namespace QuanLyKhachSan.DTO
 {
     class Position_DTO
     {
-        private string IdPosition;
+        private string idPosition;
 
         public string IdPosition
         {
-            get { return IdPosition; }
-            set { IdPosition = value; }
+            get { return idPosition; }
+            set { idPosition = value; }
         }
-        private string NamePosition;
+        private string namePosition;
 
         public string NamePosition
         {
-            get { return NamePosition; }
-            set { NamePosition = value; }
+            get { return namePosition; }
+            set { namePosition = value; }
         }
     }
 }

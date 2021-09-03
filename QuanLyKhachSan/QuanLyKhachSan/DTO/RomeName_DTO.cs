@@ -8,26 +8,26 @@ namespace QuanLyKhachSan.DTO
 {
     class RomeName_DTO
     {
-        private string RoomName;
+        private string roomName;
 
         public string RoomName
         {
-            get { return RoomName; }
-            set { RoomName = value; }
+            get { return roomName; }
+            set { roomName = value; }
         }
-        private int Quantity;
+        private int quantity;
 
         public int Quantity
         {
-            get { return Quantity; }
-            set { Quantity = value; }
+            get { return quantity; }
+            set { quantity = value; }
         }
-        private int PriceRoom;
+        private int priceRoom;
 
         public int PriceRoom
         {
-            get { return PriceRoom; }
-            set { PriceRoom = value; }
+            get { return priceRoom; }
+            set { priceRoom = value; }
         }
     }
 }

@@ -8,23 +8,23 @@ namespace QuanLyKhachSan.DTO
 {
     class Room_DTO
     {
-        private string IdRoom;
+        private string idRoom;
 
         public string IdRoom
         {
-            get { return IdRoom; }
-            set { IdRoom = value; }
+            get { return idRoom; }
+            set { idRoom = value; }
         }
-        private string RoomName;
+        private string roomName;
 
         public string RoomName
         {
-            get { return RoomName; }
-            set { RoomName = value; }
+            get { return roomName; }
+            set { roomName = value; }
         }
         private bool status;
 
-        public bool status
+        public bool Status
         {
             get { return status; }
             set { status = value; }

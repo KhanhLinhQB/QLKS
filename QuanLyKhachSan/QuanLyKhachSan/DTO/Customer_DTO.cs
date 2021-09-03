@@ -8,47 +8,47 @@ namespace QuanLyKhachSan.DTO
 {
     class KhachHang_DTO
     {
-        private string IdCustomer;
+        private string idCustomer;
 
         public string IdCustomer
         {
-            get { return IdCustomer; }
-            set { IdCustomer = value; }
+            get { return idCustomer; }
+            set { idCustomer = value; }
         }
-        private string NameCustomer;
+        private string nameCustomer;
 
         public string NameCustomer
         {
-            get { return NameCustomer; }
-            set { NameCustomer = value; }
+            get { return nameCustomer; }
+            set { nameCustomer = value; }
         }
-        private string IdCardCustomer;
+        private string idCardCustomer;
 
         public string IdCardCustomer
         {
-            get { return IdCardCustomer; }
-            set { IdCardCustomer = value; }
+            get { return idCardCustomer; }
+            set { idCardCustomer = value; }
         }
-        private string PhoneNumber;
+        private string phoneNumber;
 
         public string PhoneNumber
         {
-            get { return PhoneNumber; }
-            set { PhoneNumber = value; }
+            get { return phoneNumber; }
+            set { phoneNumber = value; }
         }
-        private string EmailCustomer;
+        private string emailCustomer;
 
         public string EmailCustomer
         {
-            get { return EmailCustomer; }
-            set { EmailCustomer = value; }
+            get { return emailCustomer; }
+            set { emailCustomer = value; }
         }
-        private string diachi;
+        private string addressCustomer;
 
         public string AddressCustomer
         {
-            get { return AddressCustomer; }
-            set { AddressCustomer = value; }
+            get { return addressCustomer; }
+            set { addressCustomer = value; }
         }
     }
 }

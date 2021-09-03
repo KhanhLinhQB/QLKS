@@ -8,19 +8,19 @@ namespace QuanLyKhachSan.DTO
 {
     class BookingDetails_DTO
     {
-        private string IdBooking;
+        private string idBooking;
 
         public string IdBooking
         {
-            get { return IdBooking; }
-            set { IdBooking = value; }
+            get { return idBooking; }
+            set { idBooking = value; }
         }
-        private string IdRoom;
+        private string idRoom;
 
         public string IdRoom
         {
-            get { return IdRoom; }
-            set { IdRoom = value; }
+            get { return idRoom; }
+            set { idRoom = value; }
         }
     }
 }

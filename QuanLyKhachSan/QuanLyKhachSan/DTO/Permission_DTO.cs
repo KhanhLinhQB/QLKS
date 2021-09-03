@@ -8,23 +8,23 @@ namespace QuanLyKhachSan.DTO
 {
     class Permission_DTO
     {
-        private string IdEmployee;
+        private string idEmployee;
 
         public string IdEmployee
         {
-            get { return IdEmployee; }
-            set { IdEmployee = value; }
+            get { return idEmployee; }
+            set { idEmployee = value; }
         }
-        private string Id;
+        private string id;
 
         public string Id
         {
-            get { return Id; }
-            set { Id = value; }
+            get { return id; }
+            set { id = value; }
         }
         private string password;
 
-        public string password
+        public string Password
         {
             get { return password; }
             set { password = value; }

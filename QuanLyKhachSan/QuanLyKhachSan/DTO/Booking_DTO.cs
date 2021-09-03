@@ -8,72 +8,72 @@ namespace QuanLyKhachSan.DTO
 {
     class Booking_DTO
     {
-        private string IdBooking;
+        private string idBooking;
 
         public string IdBooking
         {
-            get { return IdBooking; }
-            set { IdBooking = value; }
+            get { return idBooking; }
+            set { idBooking = value; }
         }
-        private string IdEmployee;
+        private string idEmployee;
 
         public string IdEmployee
         {
-            get { return IdEmployee; }
-            set { IdEmployee = value; }
+            get { return idEmployee; }
+            set { idEmployee = value; }
         }
-        private string IdCustomer;
+        private string idCustomer;
 
         public string IdCustomer
         {
-            get { return IdCustomer; }
-            set { IdCustomer = value; }
+            get { return idCustomer; }
+            set { idCustomer = value; }
         }
-        private string RoomName;
+        private string roomName;
 
         public string RoomName
         {
-            get { return RoomName; }
-            set { RoomName = value; }
+            get { return roomName; }
+            set { roomName = value; }
         }
-        private DateTime DateBook;
+        private DateTime dateBook;
 
         public DateTime DateBook
         {
-            get { return DateBook; }
-            set { DateBook = value; }
+            get { return dateBook; }
+            set { dateBook = value; }
         }
-        private DateTime DateCheckIn;
+        private DateTime dateCheckIn;
 
         public DateTime DateCheckIn
         {
-            get { return DateCheckIn; }
-            set { DateCheckIn = value; }
+            get { return dateCheckIn; }
+            set { dateCheckIn = value; }
         }
-        private DateTime DateCheckOut;
+        private DateTime dateCheckOut;
 
         public DateTime DateCheckOut
         {
-            get { return DateCheckOut; }
-            set { DateCheckOut = value; }
+            get { return dateCheckOut; }
+            set { dateCheckOut = value; }
         }
-        private int tiendatcoc;
+        private int moneyDeposit;
 
         public int MoneyDeposit
         {
-            get { return MoneyDeposit; }
-            set { MoneyDeposit = value; }
+            get { return moneyDeposit; }
+            set { moneyDeposit = value; }
         }
-        private int Quantity;
+        private int quantity;
 
         public int Quantity
         {
-            get { return Quantity; }
-            set { Quantity = value; }
+            get { return quantity; }
+            set { quantity = value; }
         }
         private bool status;
 
-        public bool status
+        public bool Status
         {
             get { return status; }
             set { status = value; }
