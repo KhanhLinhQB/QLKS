@@ -9,7 +9,7 @@ using QuanLyKhachSan.DTO;
 
 namespace QuanLyKhachSan.BLL
 {
-    class HoaDon_BLL
+    class Bill_BLL
     {
         DBAccess db = new DBAccess();
 

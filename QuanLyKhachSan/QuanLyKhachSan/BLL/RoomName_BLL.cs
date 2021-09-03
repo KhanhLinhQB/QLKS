@@ -9,7 +9,7 @@ using QuanLyKhachSan.DTO;
 
 namespace QuanLyKhachSan.BLL
 {
-    class LoaiPhong_BLL
+    class RoomName_BLL
     {
         DBAccess db = new DBAccess();
 

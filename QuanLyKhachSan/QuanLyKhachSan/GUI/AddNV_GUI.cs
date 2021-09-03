@@ -17,8 +17,8 @@ namespace QuanLyKhachSan.GUI
 {
     public partial class AddNV_GUI : DevExpress.XtraEditors.XtraUserControl
     {
-        NhanVien_BLL nvbl = new NhanVien_BLL();
-        ChucVu_BLL cvbl = new ChucVu_BLL();
+        Employee_BLL nvbl = new Employee_BLL();
+        Position_BLL cvbl = new Position_BLL();
         DBAccess db = new DBAccess();
         string macv = "";
         int t = 0;
@@ -30,15 +30,15 @@ namespace QuanLyKhachSan.GUI
         private Employee_DTO getdatanv()
         {
             Employee_DTO nv = new Employee_DTO();
-            nv.Manv = txtmanv.Text;
-            nv.Macv = cbChucvu.SelectedValue.ToString();
-            nv.Hoten = txthoten.Text;
-            nv.Ngaysinh = dtpngaysinh.Value;
-            nv.Gioitinh = txtgioitinh.Text;
-            nv.Sdt = txtsdt.Text;
-            nv.Cmnd = txtcmnd.Text;
-            nv.Email = txtemail.Text;
-            nv.Diachi = txtdc.Text;
+            nv.IdEmployee = txtmanv.Text;
+            nv.IdPosition = cbChucvu.SelectedValue.ToString();
+            nv.NameEmployee = txthoten.Text;
+            nv.DateOfBirth = dtpngaysinh.Value;
+            nv.GenderEmployee = txtgioitinh.Text;
+            nv.PhoneNumber = txtsdt.Text;
+            nv.IdCardEmployee = txtcmnd.Text;
+            nv.EmailEmployee = txtemail.Text;
+            nv.AddressEmployee = txtdc.Text;
             return nv;
         }
 
@@ -95,14 +95,14 @@ namespace QuanLyKhachSan.GUI
             macv = cbChucvu.SelectedValue.ToString();
             bindSourceNV.DataSource = nvbl.dsnv(macv);
             clearbindnv();
-            txtmanv.DataBindings.Add("Text", bindSourceNV, "manv");
-            txthoten.DataBindings.Add("Text", bindSourceNV, "hoten");
-            dtpngaysinh.DataBindings.Add("Value", bindSourceNV, "ngaysinh");
-            txtgioitinh.DataBindings.Add("Text", bindSourceNV, "gioitinh");
-            txtsdt.DataBindings.Add("Text", bindSourceNV, "sdt");
-            txtcmnd.DataBindings.Add("Text", bindSourceNV, "cmnd");
-            txtemail.DataBindings.Add("Text", bindSourceNV, "email");
-            txtdc.DataBindings.Add("Text", bindSourceNV, "diachi");
+            txtmanv.DataBindings.Add("Text", bindSourceNV, "IdEmployee");
+            txthoten.DataBindings.Add("Text", bindSourceNV, "NameEmployee");
+            dtpngaysinh.DataBindings.Add("Value", bindSourceNV, "DateOfBirth");
+            txtgioitinh.DataBindings.Add("Text", bindSourceNV, "GenderEmployee");
+            txtsdt.DataBindings.Add("Text", bindSourceNV, "PhoneNumber");
+            txtcmnd.DataBindings.Add("Text", bindSourceNV, "IdCardEmployee");
+            txtemail.DataBindings.Add("Text", bindSourceNV, "EmailEmployee");
+            txtdc.DataBindings.Add("Text", bindSourceNV, "AddressEmployee");
             dgvnv.DataSource = bindSourceNV;
         }
         private string setmanv()
@@ -122,8 +122,8 @@ namespace QuanLyKhachSan.GUI
             DataTable dtbcv = new DataTable();
             dtbcv = cvbl.dscv();
             cbChucvu.DataSource = dtbcv;
-            cbChucvu.DisplayMember = "tencv";
-            cbChucvu.ValueMember = "macv";
+            cbChucvu.DisplayMember = "NamePosition";
+            cbChucvu.ValueMember = "IdPosition";
 
             cbChucvu.SelectedIndex = 0;
             string macv01 = cbChucvu.SelectedValue.ToString();
@@ -260,7 +260,7 @@ namespace QuanLyKhachSan.GUI
             if (MessageBox.Show("Xóa nhân viên: " + txtmanv.Text + " - " + txthoten.Text + "?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Employee_DTO nv = getdatanv();
-                if (db.checkExist("quyennv", "manv", txtmanv.Text))
+                if (db.checkExist("Permission", "IdEmployee", txtmanv.Text))
                 {
                     MessageBox.Show("Chỉ có thể xóa nhân viên chưa phân quyền!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }

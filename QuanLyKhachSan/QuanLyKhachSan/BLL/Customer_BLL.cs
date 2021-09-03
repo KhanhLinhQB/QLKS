@@ -45,7 +45,7 @@ namespace QuanLyKhachSan.BLL
 
         public bool checkkh(string makh)
         {
-            return db.checkExist("khachhang", "makh", makh);
+            return db.checkExist("Customer", "IdCustomer", makh);
         }
     }
 }

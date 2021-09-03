@@ -28,12 +28,12 @@ namespace QuanLyKhachSan.GUI
         private KhachHang_DTO getdatakh()
         {
             KhachHang_DTO kh = new KhachHang_DTO();
-            kh.Makh = txtmakh.Text;
-            kh.Hoten = txthoten.Text;
-            kh.Cmnd = txtcmnd.Text;
-            kh.Sdt = txtsdt.Text;
-            kh.Email = txtemail.Text;
-            kh.Diachi = txtdc.Text;
+            kh.IdCustomer = txtmakh.Text;
+            kh.NameCustomer = txthoten.Text;
+            kh.IdCardCustomer = txtcmnd.Text;
+            kh.PhoneNumber = txtsdt.Text;
+            kh.EmailCustomer = txtemail.Text;
+            kh.AddressCustomer = txtdc.Text;
             return kh;
         }
 
@@ -81,12 +81,12 @@ namespace QuanLyKhachSan.GUI
             BindingSource bskh = new BindingSource();
             bskh.DataSource = khbl.dskh();
             clearbindkh();
-            txtmakh.DataBindings.Add("Text", bskh, "makh");
-            txthoten.DataBindings.Add("Text", bskh, "hoten");
-            txtcmnd.DataBindings.Add("Text", bskh, "cmnd");
-            txtsdt.DataBindings.Add("Text", bskh, "sdt");
-            txtemail.DataBindings.Add("Text", bskh, "email");
-            txtdc.DataBindings.Add("Text", bskh, "diachi");
+            txtmakh.DataBindings.Add("Text", bskh, "IdCustomer");
+            txthoten.DataBindings.Add("Text", bskh, "NameCustomer");
+            txtcmnd.DataBindings.Add("Text", bskh, "IdCardCustomer");
+            txtsdt.DataBindings.Add("Text", bskh, "PhoneNumber");
+            txtemail.DataBindings.Add("Text", bskh, "EmailCustomer");
+            txtdc.DataBindings.Add("Text", bskh, "AddressCustomer");
             dgvkh.DataSource = bskh;
         }
 
@@ -214,7 +214,7 @@ namespace QuanLyKhachSan.GUI
             if (MessageBox.Show("Xóa khách hàng: " + txtmakh.Text + " - " + txthoten.Text + "?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 KhachHang_DTO kh = getdatakh();
-                if (db.checkExist("datphong", "makh", txtmakh.Text))
+                if (db.checkExist("Booking", "IdBooking", txtmakh.Text))
                 {
                     MessageBox.Show("Chỉ có thể xóa khách hàng với số lần đặt phòng là 0!","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Stop);
                 }

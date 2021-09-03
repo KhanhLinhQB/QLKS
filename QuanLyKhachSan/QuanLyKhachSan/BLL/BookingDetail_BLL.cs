@@ -9,10 +9,9 @@ using QuanLyKhachSan.DTO;
 
 namespace QuanLyKhachSan.BLL
 {
-    class ChiTietDatPhong_BLL
+    class BookingDetail_BLL
     {
         DBAccess db = new DBAccess();
-
         public DataTable dsdpct()
         {
             string sql = "Select * From Bookingdetails";

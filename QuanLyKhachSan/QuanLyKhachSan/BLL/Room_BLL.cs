@@ -9,7 +9,7 @@ using QuanLyKhachSan.DTO;
 
 namespace QuanLyKhachSan.BLL
 {
-    class Phong_BLL
+    class Room_BLL
     {
         DBAccess db = new DBAccess();
 
@@ -21,7 +21,7 @@ namespace QuanLyKhachSan.BLL
 
         public DataTable dsph(string tenlp)
         {
-            string sql = "Select Room.IdRoom From Room, RoomName where Room.tenlp = RoomName.tenlp and RoomName.RoomName = '" + tenlp + "' and Room.status = 'False'";
+            string sql = "Select Room.IdRoom From Room, RoomName where Room.RoomName = RoomName.RoomName and Room.RoomName = '" + tenlp + "' and Room.status = 'False'";
             return db.getDS(sql);
         }
 

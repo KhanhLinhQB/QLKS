@@ -43,9 +43,9 @@ namespace QuanLyKhachSan.DTO
             get { return genderEmployee; }
             set { genderEmployee = value; }
         }
-        private string PhoneNumber;
+        private string phoneNumber;
 
-        public string phoneNumber
+        public string PhoneNumber
         {
             get { return phoneNumber; }
             set { phoneNumber = value; }

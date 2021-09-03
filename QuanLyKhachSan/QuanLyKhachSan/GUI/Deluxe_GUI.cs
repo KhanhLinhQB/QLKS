@@ -14,7 +14,7 @@ namespace QuanLyKhachSan.GUI
 {
     public partial class Deluxe_GUI : DevExpress.XtraEditors.XtraUserControl
     {
-        Phong_BLL pbl = new Phong_BLL();
+        Room_BLL pbl = new Room_BLL();
 
         public Deluxe_GUI()
         {

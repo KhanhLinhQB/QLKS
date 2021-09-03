@@ -9,7 +9,7 @@ using QuanLyKhachSan.DTO;
 
 namespace QuanLyKhachSan.BLL
 {
-    class ChucVu_BLL
+    class Position_BLL
     {
         DBAccess db = new DBAccess();
 

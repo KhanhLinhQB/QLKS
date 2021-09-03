@@ -36,7 +36,7 @@ namespace QuanLyKhachSan
 
         private void login()
         {
-            string strGetAd = "Select * From quyennv Where manv = '" + txtUser.Text + "' and matkhau = '" + txtPass.Text + "'";
+            string strGetAd = "Select * From Permission Where IdEmployee = '" + txtUser.Text + "' and password = '" + txtPass.Text + "'";
             try
             {
                 DBAccess d = new DBAccess();
@@ -44,12 +44,12 @@ namespace QuanLyKhachSan
                 if (dtb.Rows.Count > 0)
                 {
                     DataRow q = dtb.Rows[0];
-                    mnv = q["manv"].ToString();
-                    qnv = q["id"].ToString();
-                    string sql = "Select hoten From nhanvien Where manv = '" + txtUser.Text + "'";
+                    mnv = q["IdEmployee"].ToString();
+                    qnv = q["Id"].ToString();
+                    string sql = "Select NameEmployee From Employee Where IdEmployee = '" + txtUser.Text + "'";
                     DataTable dt = d.getDS(sql);
                     DataRow r = dt.Rows[0];
-                    MessageBox.Show("Xin chào " + r["hoten"].ToString() + "!","Xin chào",MessageBoxButtons.OK);
+                    MessageBox.Show("Xin chào " + r["NameEmployee"].ToString() + "!","Xin chào",MessageBoxButtons.OK);
                     this.Hide();
                     this.Dispose(false);
                     fm = new frmMain();

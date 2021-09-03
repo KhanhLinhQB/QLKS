@@ -17,7 +17,7 @@ namespace QuanLyKhachSan.GUI
     public partial class Phong_GUI : DevExpress.XtraEditors.XtraUserControl
     {
         AddTab at = new AddTab();
-        LoaiPhong_BLL lpbl = new LoaiPhong_BLL();
+        RoomName_BLL lpbl = new RoomName_BLL();
         public Phong_GUI()
         {
             InitializeComponent();

@@ -44,15 +44,15 @@ namespace QuanLyKhachSan.GUI
         {
             DataTable dtb = adbl.dsnvpq();
             cbmanv.DataSource = dtb;
-            cbmanv.ValueMember = "manv";
-            cbmanv.DisplayMember = "manv";
+            cbmanv.ValueMember = "IdEmployee";
+            cbmanv.DisplayMember = "IdEmployee";
         }
 
         private void Admin_GUI_Load(object sender, EventArgs e)
         {
             bindDataAd();
             bindDataCbNV();
-            if (db.checkExist("quyennv", "manv", cbmanv.SelectedValue.ToString()))
+            if (db.checkExist("Permission", "IdEmployee", cbmanv.SelectedValue.ToString()))
             {
                 txtqh.Text = adbl.quyennv(cbmanv.SelectedValue.ToString());
             }
@@ -64,7 +64,7 @@ namespace QuanLyKhachSan.GUI
 
         private void cbmanv_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (db.checkExist("quyennv", "manv", cbmanv.SelectedValue.ToString()))
+            if (db.checkExist("Permission", "IdEmployee", cbmanv.SelectedValue.ToString()))
             {
                 txtqh.Text = adbl.quyennv(cbmanv.SelectedValue.ToString());
             }
@@ -81,12 +81,12 @@ namespace QuanLyKhachSan.GUI
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            string sql = "Insert Into quyennv Values('"+cbmanv.SelectedValue.ToString()+"','"+id+"','"+txtmknv.Text+"')";
-            string sql2 = "Update quyennv set id='" + id + "',matkhau='" + txtmknv.Text + "' where manv = '" + cbmanv.SelectedValue.ToString() + "'";
+            string sql = "Insert Into Permission Values('" + cbmanv.SelectedValue.ToString()+"','"+id+"','"+txtmknv.Text+"')";
+            string sql2 = "Update Permission set id='" + id + "',matkhau='" + txtmknv.Text + "' where IdEmployee = '" + cbmanv.SelectedValue.ToString() + "'";
             if (txtmknv.Text.Length == 3)
             {
                 thongbao.Text = "";
-                if (!db.checkExist("quyennv", "manv", cbmanv.SelectedValue.ToString()))
+                if (!db.checkExist("Permission", "IdEmployee", cbmanv.SelectedValue.ToString()))
                 {
                     if (db.ExecuteQuery(sql))
                     {

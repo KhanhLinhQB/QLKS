@@ -78,14 +78,14 @@
   <ItemGroup>
     <Compile Include="AddTab.cs" />
     <Compile Include="BLL\Admin_BLL.cs" />
-    <Compile Include="BLL\ChiTietDatPhong_BLL.cs" />
-    <Compile Include="BLL\ChucVu_BLL.cs" />
-    <Compile Include="BLL\DatPhong_BLL.cs" />
-    <Compile Include="BLL\HoaDon_BLL.cs" />
-    <Compile Include="BLL\KhachHang_BLL.cs" />
-    <Compile Include="BLL\LoaiPhong_BLL.cs" />
-    <Compile Include="BLL\NhanVien_BLL.cs" />
-    <Compile Include="BLL\Phong_BLL.cs" />
+    <Compile Include="BLL\BookingDetail_BLL.cs" />
+    <Compile Include="BLL\Position_BLL.cs" />
+    <Compile Include="BLL\Booking_BLL.cs" />
+    <Compile Include="BLL\Bill_BLL.cs" />
+    <Compile Include="BLL\Customer_BLL.cs" />
+    <Compile Include="BLL\RoomName_BLL.cs" />
+    <Compile Include="BLL\Employee_BLL.cs" />
+    <Compile Include="BLL\Room_BLL.cs" />
     <Compile Include="DAL\DBAccess.cs" />
     <Compile Include="DTO\Position_DTO.cs" />
     <Compile Include="DTO\BookingDetails_DTO.cs" />
@@ -96,6 +96,7 @@
     <Compile Include="DTO\Employee_DTO.cs" />
     <Compile Include="DTO\Room_DTO.cs" />
     <Compile Include="DTO\Permission_DTO.cs" />
+    <Compile Include="DTO\Role_DTO.cs" />
     <Compile Include="frmDSKH.cs">
       <SubType>Form</SubType>
     </Compile>

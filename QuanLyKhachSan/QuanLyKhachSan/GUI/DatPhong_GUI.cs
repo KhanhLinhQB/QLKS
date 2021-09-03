@@ -17,11 +17,11 @@ namespace QuanLyKhachSan.GUI
 {
     public partial class DatPhong_GUI : DevExpress.XtraEditors.XtraUserControl
     {
-        LoaiPhong_BLL lpbl = new LoaiPhong_BLL();
-        Phong_BLL pbl = new Phong_BLL();
-        DatPhong_BLL dpbl = new DatPhong_BLL();
-        ChiTietDatPhong_BLL ctdpbl = new ChiTietDatPhong_BLL();
-        HoaDon_BLL hdbl = new HoaDon_BLL();
+        RoomName_BLL lpbl = new RoomName_BLL();
+        Room_BLL pbl = new Room_BLL();
+        Booking_BLL dpbl = new Booking_BLL();
+        BookingDetail_BLL ctdpbl = new BookingDetail_BLL();
+        Bill_BLL hdbl = new Bill_BLL();
         DBAccess db = new DBAccess();
         string tenlp = "";
         public static string madatphong = "";
@@ -37,24 +37,24 @@ namespace QuanLyKhachSan.GUI
         private Booking_DTO getdatadp()
         {
             Booking_DTO dp = new Booking_DTO();
-            dp.Madp = txtmadp.Text;
-            dp.Manv = txtmanv.Text;
-            dp.Makh = txtmakh.Text;
-            dp.Tenlp = cbloaiphong.SelectedValue.ToString();
-            dp.Ngaydat = dtpngaydat.Value;
-            dp.Ngayden = dtpngayden.Value;
-            dp.Ngaydi = dtpngaydi.Value;
-            dp.Tiendatcoc = int.Parse(txttiencoc.Text);
-            dp.Soluong = int.Parse(txtsoluong.Text);
-            dp.Trangthai = ckbtrangtrai.Checked;
+            dp.IdBooking = txtmadp.Text;
+            dp.IdEmployee = txtmanv.Text;
+            dp.IdCustomer = txtmakh.Text;
+            dp.RoomName = cbloaiphong.SelectedValue.ToString();
+            dp.DateBook = dtpngaydat.Value;
+            dp.DateCheckIn = dtpngayden.Value;
+            dp.DateCheckOut = dtpngaydi.Value;
+            dp.MoneyDeposit = int.Parse(txttiencoc.Text);
+            dp.Quantity = int.Parse(txtsoluong.Text);
+            dp.Status = ckbtrangtrai.Checked;
             return dp;
         }
 
         private BookingDetails_DTO getdatactdp(ArrayList arr, int i)
         {
             BookingDetails_DTO ctdp = new BookingDetails_DTO();
-            ctdp.Madp = txtmadp.Text;
-            ctdp.Maphong = arr[i].ToString();
+            ctdp.IdBooking = txtmadp.Text;
+            ctdp.IdRoom = arr[i].ToString();
             return ctdp;
         }
 
@@ -119,16 +119,16 @@ namespace QuanLyKhachSan.GUI
             bsdp.DataSource = dpbl.dsdp();
             clearbinddp();
             dgvdp.DataSource = bsdp;
-            txtmadp.DataBindings.Add("Text", bsdp, "madp");
-            txtmanv.DataBindings.Add("Text", bsdp, "manv");
-            txtmakh.DataBindings.Add("Text", bsdp, "makh");
-            txtLpDat.DataBindings.Add("Text", bsdp, "tenlp");
-            dtpngaydat.DataBindings.Add("Value", bsdp, "ngaydat");
-            dtpngayden.DataBindings.Add("Value", bsdp, "ngayden");
-            dtpngaydi.DataBindings.Add("Value", bsdp, "ngaydi");
-            txttiencoc.DataBindings.Add("Text", bsdp, "tiendatcoc");
-            txtsoluong.DataBindings.Add("Text", bsdp, "soluong");
-            ckbtrangtrai.DataBindings.Add("Checked", bsdp, "trangthai");
+            txtmadp.DataBindings.Add("Text", bsdp, "IdBooking");
+            txtmanv.DataBindings.Add("Text", bsdp, "IdEmployee");
+            txtmakh.DataBindings.Add("Text", bsdp, "IdCustomer");
+            txtLpDat.DataBindings.Add("Text", bsdp, "RoomName");
+            dtpngaydat.DataBindings.Add("Value", bsdp, "DateBook");
+            dtpngayden.DataBindings.Add("Value", bsdp, "DateCheckIn");
+            dtpngaydi.DataBindings.Add("Value", bsdp, "DateCheckOut");
+            txttiencoc.DataBindings.Add("Text", bsdp, "MoneyDeposit");
+            txtsoluong.DataBindings.Add("Text", bsdp, "Quantity");
+            ckbtrangtrai.DataBindings.Add("Checked", bsdp, "status");
             bindatalistdatphong();
         }
 
@@ -137,8 +137,8 @@ namespace QuanLyKhachSan.GUI
             DataTable dtblp = new DataTable();
             dtblp = lpbl.dslp();
             cbloaiphong.DataSource = dtblp;
-            cbloaiphong.DisplayMember = "tenlp";
-            cbloaiphong.ValueMember = "tenlp";
+            cbloaiphong.DisplayMember = "RoomName";
+            cbloaiphong.ValueMember = "RoomName";
             bindatalistphong();
             bindatadp();
         }
@@ -150,8 +150,8 @@ namespace QuanLyKhachSan.GUI
             bsp.DataSource = pbl.dsph(tenlp);
             listPhong.DataBindings.Clear();
             listPhong.DataSource = bsp;
-            listPhong.DisplayMember = "maphong";
-            listPhong.ValueMember = "maphong";
+            listPhong.DisplayMember = "IdRoom";
+            listPhong.ValueMember = "IdRoom";
         }
 
         private void bindatalistdatphong()
@@ -159,8 +159,8 @@ namespace QuanLyKhachSan.GUI
             BindingSource bsctdp = new BindingSource();
             bsctdp.DataSource = ctdpbl.dsdpct(txtmadp.Text);
             listDatphong.DataSource = bsctdp;
-            listDatphong.DisplayMember = "maphong";
-            listDatphong.ValueMember = "maphong";
+            listDatphong.DisplayMember = "IdRoom";
+            listDatphong.ValueMember = "IdRoom";
         }
 
         private void cbloaiphong_SelectedIndexChanged(object sender, EventArgs e)
@@ -280,7 +280,7 @@ namespace QuanLyKhachSan.GUI
 
         private void btnluu_Click(object sender, EventArgs e)
         {
-            if (db.checkExist("khachhang", "makh", txtmakh.Text))
+            if (db.checkExist("Customer", "IdCustomer", txtmakh.Text))
             {
                 if (t == 1)
                 {
@@ -391,10 +391,10 @@ namespace QuanLyKhachSan.GUI
         private Bill_DTO getdatahd()
         {
             Bill_DTO hd = new Bill_DTO();
-            hd.Mahd = getmahd();
-            hd.Madp = txtmadp.Text;
-            hd.Ngaylap = DateTime.Today;
-            hd.Tongtien = getTongtien();
+            hd.IdBill = getmahd();
+            hd.IdBooking = txtmadp.Text;
+            hd.DateBilling = DateTime.Today;
+            hd.Total = getTongtien();
             return hd;
         }
 

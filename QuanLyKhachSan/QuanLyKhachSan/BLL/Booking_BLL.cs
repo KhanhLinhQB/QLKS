@@ -9,7 +9,7 @@ using QuanLyKhachSan.DTO;
 
 namespace QuanLyKhachSan.BLL
 {
-    class DatPhong_BLL
+    class Booking_BLL
     {
         DBAccess db = new DBAccess();
 
@@ -22,7 +22,7 @@ namespace QuanLyKhachSan.BLL
         public bool adddp(Booking_DTO dp)
         {
             string[] param = { "@madp", "@manv", "@makh", "@tenlp", "@ngaydat", "@ngayden", "@ngaydi", "@tiendatcoc", "@soluong", "@trangthai" };
-            object[] values = { dp.IdBooking, dp.IdEmployee, dp.IdCustomer, dp.RoomName, dp.DateBook, dp.DateCheckIn, dp.DateCheckOut, dp.MoneyDeposit, dp.Quantity, dp.status };
+            object[] values = { dp.IdBooking, dp.IdEmployee, dp.IdCustomer, dp.RoomName, dp.DateBook, dp.DateCheckIn, dp.DateCheckOut, dp.MoneyDeposit, dp.Quantity, dp.Status };
             string query = "Insert Into Booking Values(@madp,@manv,@makh,@tenlp,convert(date,@ngaydat,105),convert(date,@ngayden,105),convert(date,@ngaydi,105),@tiendatcoc,@soluong,@trangthai)";
             return db.ExecuteNonQueryPara(query, param, values);
         }
@@ -30,7 +30,7 @@ namespace QuanLyKhachSan.BLL
         public bool editdp(Booking_DTO dp)
         {
             string[] param = { "@madp", "@manv", "@makh", "@tenlp", "@ngaydat", "@ngayden", "@ngaydi", "@tiendatcoc", "@soluong", "@trangthai" };
-            object[] values = { dp.IdBooking, dp.IdEmployee, dp.IdCustomer, dp.RoomName, dp.DateBook, dp.DateCheckIn, dp.DateCheckOut, dp.MoneyDeposit, dp.Quantity, dp.status };
+            object[] values = { dp.IdBooking, dp.IdEmployee, dp.IdCustomer, dp.RoomName, dp.DateBook, dp.DateCheckIn, dp.DateCheckOut, dp.MoneyDeposit, dp.Quantity, dp.Status };
             string query = "Update Booking set IdBooking=@madp,IdEmployee=@manv,IdCustomer=@makh,RoomName=@tenlp,DateBook=convert(date,@ngaydat,105),DateCheckIn=convert(date,@ngayden,105),DateCheckOut=convert(date,@ngaydi,105),MoneyDeposit=@tiendatcoc,Quantity=@soluong,status=@trangthai where IdBooking=@madp";
             return db.ExecuteNonQueryPara(query, param, values);
         }
