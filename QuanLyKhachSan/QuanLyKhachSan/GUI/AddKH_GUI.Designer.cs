@@ -28,18 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.txtdc = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.txtemail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtsdt = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtcmnd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txthoten = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtmakh = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btnxoa = new DevExpress.XtraEditors.SimpleButton();
@@ -54,19 +49,25 @@
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtdc = new DevExpress.XtraEditors.TextEdit();
+            this.txtemail = new DevExpress.XtraEditors.TextEdit();
+            this.txtsdt = new DevExpress.XtraEditors.TextEdit();
+            this.txtcmnd = new DevExpress.XtraEditors.TextEdit();
+            this.txthoten = new DevExpress.XtraEditors.TextEdit();
+            this.txtmakh = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvkh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtdc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtemail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsdt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcmnd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txthoten.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtmakh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvkh)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -84,139 +85,73 @@
             this.groupControl1.Controls.Add(this.txtmakh);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Location = new System.Drawing.Point(21, 9);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(933, 319);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Thông tin khách hàng";
-            // 
-            // txtdc
-            // 
-            this.txtdc.Enabled = false;
-            this.txtdc.Location = new System.Drawing.Point(132, 257);
-            this.txtdc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtdc.Name = "txtdc";
-            this.txtdc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdc.Properties.Appearance.Options.UseFont = true;
-            this.txtdc.Size = new System.Drawing.Size(752, 28);
-            this.txtdc.TabIndex = 11;
             // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Location = new System.Drawing.Point(42, 265);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(57, 21);
             this.labelControl6.TabIndex = 10;
             this.labelControl6.Text = "Địa chỉ:";
-            // 
-            // txtemail
-            // 
-            this.txtemail.Enabled = false;
-            this.txtemail.Location = new System.Drawing.Point(132, 215);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Properties.Appearance.Options.UseFont = true;
-            this.txtemail.Size = new System.Drawing.Size(752, 28);
-            this.txtemail.TabIndex = 9;
             // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Location = new System.Drawing.Point(42, 222);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(47, 21);
             this.labelControl5.TabIndex = 8;
             this.labelControl5.Text = "Email:";
-            // 
-            // txtsdt
-            // 
-            this.txtsdt.Enabled = false;
-            this.txtsdt.Location = new System.Drawing.Point(132, 172);
-            this.txtsdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtsdt.Name = "txtsdt";
-            this.txtsdt.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsdt.Properties.Appearance.Options.UseFont = true;
-            this.txtsdt.Size = new System.Drawing.Size(752, 28);
-            this.txtsdt.TabIndex = 7;
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(42, 180);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(37, 21);
             this.labelControl4.TabIndex = 6;
             this.labelControl4.Text = "SDT:";
-            // 
-            // txtcmnd
-            // 
-            this.txtcmnd.Enabled = false;
-            this.txtcmnd.Location = new System.Drawing.Point(132, 130);
-            this.txtcmnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtcmnd.Name = "txtcmnd";
-            this.txtcmnd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcmnd.Properties.Appearance.Options.UseFont = true;
-            this.txtcmnd.Size = new System.Drawing.Size(752, 28);
-            this.txtcmnd.TabIndex = 5;
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(42, 137);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(52, 21);
             this.labelControl3.TabIndex = 4;
             this.labelControl3.Text = "CMND:";
-            // 
-            // txthoten
-            // 
-            this.txthoten.Enabled = false;
-            this.txthoten.Location = new System.Drawing.Point(132, 88);
-            this.txthoten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txthoten.Name = "txthoten";
-            this.txthoten.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txthoten.Properties.Appearance.Options.UseFont = true;
-            this.txthoten.Size = new System.Drawing.Size(752, 28);
-            this.txthoten.TabIndex = 3;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(42, 95);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(55, 21);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "Họ tên:";
-            // 
-            // txtmakh
-            // 
-            this.txtmakh.Enabled = false;
-            this.txtmakh.Location = new System.Drawing.Point(132, 45);
-            this.txtmakh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtmakh.Name = "txtmakh";
-            this.txtmakh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmakh.Properties.Appearance.Options.UseFont = true;
-            this.txtmakh.Size = new System.Drawing.Size(752, 28);
-            this.txtmakh.TabIndex = 1;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(42, 53);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(54, 21);
             this.labelControl1.TabIndex = 0;
@@ -229,7 +164,7 @@
             this.groupControl2.Controls.Add(this.btnsua);
             this.groupControl2.Controls.Add(this.btnthem);
             this.groupControl2.Location = new System.Drawing.Point(963, 9);
-            this.groupControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(214, 319);
             this.groupControl2.TabIndex = 1;
@@ -238,7 +173,7 @@
             // btnxoa
             // 
             this.btnxoa.Location = new System.Drawing.Point(39, 243);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(136, 44);
             this.btnxoa.TabIndex = 3;
@@ -249,7 +184,7 @@
             // 
             this.btnluu.Enabled = false;
             this.btnluu.Location = new System.Drawing.Point(39, 175);
-            this.btnluu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnluu.Margin = new System.Windows.Forms.Padding(4);
             this.btnluu.Name = "btnluu";
             this.btnluu.Size = new System.Drawing.Size(136, 44);
             this.btnluu.TabIndex = 2;
@@ -259,7 +194,7 @@
             // btnsua
             // 
             this.btnsua.Location = new System.Drawing.Point(39, 111);
-            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(136, 44);
             this.btnsua.TabIndex = 1;
@@ -269,7 +204,7 @@
             // btnthem
             // 
             this.btnthem.Location = new System.Drawing.Point(39, 45);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(136, 44);
             this.btnthem.TabIndex = 0;
@@ -280,7 +215,7 @@
             // 
             this.groupControl3.Controls.Add(this.dgvkh);
             this.groupControl3.Location = new System.Drawing.Point(21, 336);
-            this.groupControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupControl3.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(1156, 370);
             this.groupControl3.TabIndex = 2;
@@ -298,8 +233,16 @@
             this.sdt,
             this.email,
             this.diachi});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvkh.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvkh.Location = new System.Drawing.Point(18, 34);
-            this.dgvkh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvkh.Margin = new System.Windows.Forms.Padding(4);
             this.dgvkh.Name = "dgvkh";
             this.dgvkh.ReadOnly = true;
             this.dgvkh.RowHeadersWidth = 62;
@@ -361,6 +304,72 @@
             this.diachi.ReadOnly = true;
             this.diachi.Width = 137;
             // 
+            // txtdc
+            // 
+            this.txtdc.Enabled = false;
+            this.txtdc.Location = new System.Drawing.Point(132, 257);
+            this.txtdc.Margin = new System.Windows.Forms.Padding(4);
+            this.txtdc.Name = "txtdc";
+            this.txtdc.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdc.Properties.Appearance.Options.UseFont = true;
+            this.txtdc.Size = new System.Drawing.Size(752, 28);
+            this.txtdc.TabIndex = 11;
+            // 
+            // txtemail
+            // 
+            this.txtemail.Enabled = false;
+            this.txtemail.Location = new System.Drawing.Point(132, 215);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.Properties.Appearance.Options.UseFont = true;
+            this.txtemail.Size = new System.Drawing.Size(752, 28);
+            this.txtemail.TabIndex = 9;
+            // 
+            // txtsdt
+            // 
+            this.txtsdt.Enabled = false;
+            this.txtsdt.Location = new System.Drawing.Point(132, 172);
+            this.txtsdt.Margin = new System.Windows.Forms.Padding(4);
+            this.txtsdt.Name = "txtsdt";
+            this.txtsdt.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsdt.Properties.Appearance.Options.UseFont = true;
+            this.txtsdt.Size = new System.Drawing.Size(752, 28);
+            this.txtsdt.TabIndex = 7;
+            // 
+            // txtcmnd
+            // 
+            this.txtcmnd.Enabled = false;
+            this.txtcmnd.Location = new System.Drawing.Point(132, 130);
+            this.txtcmnd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcmnd.Name = "txtcmnd";
+            this.txtcmnd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcmnd.Properties.Appearance.Options.UseFont = true;
+            this.txtcmnd.Size = new System.Drawing.Size(752, 28);
+            this.txtcmnd.TabIndex = 5;
+            // 
+            // txthoten
+            // 
+            this.txthoten.Enabled = false;
+            this.txthoten.Location = new System.Drawing.Point(132, 88);
+            this.txthoten.Margin = new System.Windows.Forms.Padding(4);
+            this.txthoten.Name = "txthoten";
+            this.txthoten.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txthoten.Properties.Appearance.Options.UseFont = true;
+            this.txthoten.Size = new System.Drawing.Size(752, 28);
+            this.txthoten.TabIndex = 3;
+            // 
+            // txtmakh
+            // 
+            this.txtmakh.Enabled = false;
+            this.txtmakh.Location = new System.Drawing.Point(132, 45);
+            this.txtmakh.Margin = new System.Windows.Forms.Padding(4);
+            this.txtmakh.Name = "txtmakh";
+            this.txtmakh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmakh.Properties.Appearance.Options.UseFont = true;
+            this.txtmakh.Size = new System.Drawing.Size(752, 28);
+            this.txtmakh.TabIndex = 1;
+            // 
             // AddKH_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -368,24 +377,24 @@
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddKH_GUI";
             this.Size = new System.Drawing.Size(1196, 757);
             this.Load += new System.EventHandler(this.AddKH_GUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvkh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtdc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtemail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsdt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcmnd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txthoten.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtmakh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
-            this.groupControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvkh)).EndInit();
             this.ResumeLayout(false);
 
         }
