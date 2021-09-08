@@ -192,3 +192,4 @@ C:\Users\nguye\Documents\GitHub\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Hot
 C:\Users\nguye\Documents\GitHub\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\HotelManagement.csproj.CopyComplete
 C:\Users\nguye\Documents\GitHub\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 C:\Users\nguye\Documents\GitHub\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+C:\Users\nguye\Documents\GitHub\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.GUI.ChangePasswork_GUI.resources

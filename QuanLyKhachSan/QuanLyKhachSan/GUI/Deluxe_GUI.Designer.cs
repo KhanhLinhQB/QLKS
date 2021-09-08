@@ -45,8 +45,8 @@
             // 
             this.d502.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d502.Appearance.Options.UseFont = true;
-            this.d502.Image = ((System.Drawing.Image)(resources.GetObject("d502.Image")));
-            this.d502.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d502.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d502.ImageOptions.Image")));
+            this.d502.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d502.Location = new System.Drawing.Point(233, 273);
             this.d502.Name = "d502";
             this.d502.Size = new System.Drawing.Size(94, 80);
@@ -59,8 +59,8 @@
             // 
             this.d501.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d501.Appearance.Options.UseFont = true;
-            this.d501.Image = ((System.Drawing.Image)(resources.GetObject("d501.Image")));
-            this.d501.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d501.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d501.ImageOptions.Image")));
+            this.d501.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d501.Location = new System.Drawing.Point(28, 273);
             this.d501.Name = "d501";
             this.d501.Size = new System.Drawing.Size(94, 80);
@@ -73,8 +73,8 @@
             // 
             this.d402.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d402.Appearance.Options.UseFont = true;
-            this.d402.Image = ((System.Drawing.Image)(resources.GetObject("d402.Image")));
-            this.d402.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d402.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d402.ImageOptions.Image")));
+            this.d402.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d402.Location = new System.Drawing.Point(643, 145);
             this.d402.Name = "d402";
             this.d402.Size = new System.Drawing.Size(94, 80);
@@ -87,8 +87,8 @@
             // 
             this.d401.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d401.Appearance.Options.UseFont = true;
-            this.d401.Image = ((System.Drawing.Image)(resources.GetObject("d401.Image")));
-            this.d401.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d401.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d401.ImageOptions.Image")));
+            this.d401.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d401.Location = new System.Drawing.Point(440, 145);
             this.d401.Name = "d401";
             this.d401.Size = new System.Drawing.Size(94, 80);
@@ -101,8 +101,8 @@
             // 
             this.d302.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d302.Appearance.Options.UseFont = true;
-            this.d302.Image = ((System.Drawing.Image)(resources.GetObject("d302.Image")));
-            this.d302.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d302.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d302.ImageOptions.Image")));
+            this.d302.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d302.Location = new System.Drawing.Point(233, 145);
             this.d302.Name = "d302";
             this.d302.Size = new System.Drawing.Size(94, 80);
@@ -115,8 +115,8 @@
             // 
             this.d301.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d301.Appearance.Options.UseFont = true;
-            this.d301.Image = ((System.Drawing.Image)(resources.GetObject("d301.Image")));
-            this.d301.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d301.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d301.ImageOptions.Image")));
+            this.d301.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d301.Location = new System.Drawing.Point(28, 145);
             this.d301.Name = "d301";
             this.d301.Size = new System.Drawing.Size(94, 80);
@@ -129,8 +129,8 @@
             // 
             this.d204.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d204.Appearance.Options.UseFont = true;
-            this.d204.Image = ((System.Drawing.Image)(resources.GetObject("d204.Image")));
-            this.d204.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d204.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d204.ImageOptions.Image")));
+            this.d204.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d204.Location = new System.Drawing.Point(643, 19);
             this.d204.Name = "d204";
             this.d204.Size = new System.Drawing.Size(94, 80);
@@ -143,8 +143,8 @@
             // 
             this.d203.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d203.Appearance.Options.UseFont = true;
-            this.d203.Image = ((System.Drawing.Image)(resources.GetObject("d203.Image")));
-            this.d203.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d203.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d203.ImageOptions.Image")));
+            this.d203.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d203.Location = new System.Drawing.Point(440, 19);
             this.d203.Name = "d203";
             this.d203.Size = new System.Drawing.Size(94, 80);
@@ -157,8 +157,8 @@
             // 
             this.d105.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d105.Appearance.Options.UseFont = true;
-            this.d105.Image = ((System.Drawing.Image)(resources.GetObject("d105.Image")));
-            this.d105.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d105.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d105.ImageOptions.Image")));
+            this.d105.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d105.Location = new System.Drawing.Point(233, 19);
             this.d105.Name = "d105";
             this.d105.Size = new System.Drawing.Size(94, 80);
@@ -171,8 +171,8 @@
             // 
             this.d104.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d104.Appearance.Options.UseFont = true;
-            this.d104.Image = ((System.Drawing.Image)(resources.GetObject("d104.Image")));
-            this.d104.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.d104.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("d104.ImageOptions.Image")));
+            this.d104.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.d104.Location = new System.Drawing.Point(28, 19);
             this.d104.Name = "d104";
             this.d104.Size = new System.Drawing.Size(94, 80);

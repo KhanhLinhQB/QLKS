@@ -145,6 +145,12 @@
     <Compile Include="GUI\Admin_GUI.Designer.cs">
       <DependentUpon>Admin_GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ChangePasswork_GUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ChangePasswork_GUI.Designer.cs">
+      <DependentUpon>ChangePasswork_GUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\DatPhong_GUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Admin_GUI.resx">
       <DependentUpon>Admin_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChangePasswork_GUI.resx">
+      <DependentUpon>ChangePasswork_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DatPhong_GUI.resx">
       <DependentUpon>DatPhong_GUI.cs</DependentUpon>

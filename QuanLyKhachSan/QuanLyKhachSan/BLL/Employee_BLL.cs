@@ -53,5 +53,15 @@ namespace QuanLyKhachSan.BLL
         {
             return db.checkExist("Employee", "IdEmployee", manv);
         }
+
+
+        public bool ChangePass(Permission_DTO tk)
+        {
+            string[] param = { "@manv", "@pass" };
+            object[] values = { tk.IdEmployee};
+            string query = "Update Permission Set password=@pass where IdEmployee=@manv";
+            return db.ExecuteNonQueryPara(query, param, values);
+            
+        }
     }
 }

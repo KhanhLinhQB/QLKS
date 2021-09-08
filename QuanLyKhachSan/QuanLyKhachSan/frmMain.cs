@@ -256,7 +256,25 @@ namespace QuanLyKhachSan
             }
             if (t != 1)
             {
-                clsAddTab.setTab(xtraTabControl, "Quản trị viên", new Admin_GUI());
+                clsAddTab.setTab(xtraTabControl, "Quản trị viên", new ChangePasswork_GUI());
+            }
+        }
+
+
+        private void bbtChangePass_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            int t = 0;
+            foreach (DevExpress.XtraTab.XtraTabPage tab in xtraTabControl.TabPages)
+            {
+                if (tab.Text == "Đổi mật khẩu")
+                {
+                    xtraTabControl.SelectedTabPage = tab;
+                    t = 1;
+                }
+            }
+            if (t != 1)
+            {
+                clsAddTab.setTab(xtraTabControl, "Đổi mật khẩu", new ChangePasswork_GUI());
             }
         }
 
@@ -286,5 +304,9 @@ namespace QuanLyKhachSan
         {
             new frmDSKH().Show();
         }
+
+
+       
+
     }
 }
