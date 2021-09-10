@@ -256,7 +256,7 @@ namespace QuanLyKhachSan
             }
             if (t != 1)
             {
-                clsAddTab.setTab(xtraTabControl, "Quản trị viên", new ChangePasswork_GUI());
+                clsAddTab.setTab(xtraTabControl, "Quản trị viên", new Admin_GUI());
             }
         }
 
