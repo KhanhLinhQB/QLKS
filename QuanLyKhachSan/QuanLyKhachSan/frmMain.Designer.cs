@@ -34,6 +34,7 @@
             this.bbtnAdmin = new DevExpress.XtraBars.BarButtonItem();
             this.bbtnDoimk = new DevExpress.XtraBars.BarButtonItem();
             this.bbtnLogout = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtnHelp = new DevExpress.XtraBars.BarButtonItem();
             this.SkinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.bbtnQLdocgia = new DevExpress.XtraBars.BarButtonItem();
             this.bbtnQLSach = new DevExpress.XtraBars.BarButtonItem();
@@ -59,6 +60,7 @@
             this.rbpHethong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbgTaikhoan = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgGiaodien = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbgTrogiup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpTacvu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbgNV = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbgKH = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -74,9 +76,10 @@
             this.nbiThemkh = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiDatphong = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiThongtinKH = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiQuanlyphong = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarGroup_TienIch = new DevExpress.XtraNavBar.NavBarGroup();
             this.nbiCalendar = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiCalculator = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiQuanlyphong = new DevExpress.XtraNavBar.NavBarItem();
             this.xtraTabControl = new DevExpress.XtraTab.XtraTabControl();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
@@ -88,17 +91,14 @@
             // 
             // RibbonControl
             // 
-            // 
-            // 
-            // 
             this.RibbonControl.ExpandCollapseItem.Id = 0;
             this.RibbonControl.ExpandCollapseItem.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.RibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.RibbonControl.ExpandCollapseItem,
-            this.RibbonControl.SearchEditItem,
             this.bbtnAdmin,
             this.bbtnDoimk,
             this.bbtnLogout,
+            this.bbtnHelp,
             this.SkinRibbonGalleryBarItem,
             this.bbtnQLdocgia,
             this.bbtnQLSach,
@@ -120,7 +120,8 @@
             this.bbtnDSKH,
             this.barHeaderItem1,
             this.bandango,
-            this.time});
+            this.time,
+            this.RibbonControl.SearchEditItem});
             this.RibbonControl.Location = new System.Drawing.Point(0, 0);
             this.RibbonControl.Margin = new System.Windows.Forms.Padding(4);
             this.RibbonControl.MaxItemId = 1;
@@ -154,6 +155,7 @@
             this.bbtnDoimk.ImageOptions.LargeImage = global::QuanLyKhachSan.Properties.Resources.password;
             this.bbtnDoimk.LargeWidth = 80;
             this.bbtnDoimk.Name = "bbtnDoimk";
+            this.bbtnDoimk.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtnDoimk_ItemClick);
             // 
             // bbtnLogout
             // 
@@ -163,6 +165,14 @@
             this.bbtnLogout.LargeWidth = 80;
             this.bbtnLogout.Name = "bbtnLogout";
             this.bbtnLogout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtnLogout_ItemClick);
+            // 
+            // bbtnHelp
+            // 
+            this.bbtnHelp.Caption = "Trợ giúp";
+            this.bbtnHelp.Id = 4;
+            this.bbtnHelp.ImageOptions.LargeImage = global::QuanLyKhachSan.Properties.Resources.help;
+            this.bbtnHelp.LargeWidth = 80;
+            this.bbtnHelp.Name = "bbtnHelp";
             // 
             // SkinRibbonGalleryBarItem
             // 
@@ -314,7 +324,7 @@
             // 
             // barHeaderItem1
             // 
-            this.barHeaderItem1.Caption = "Quản lý khách sạn. Hotel Management";
+            this.barHeaderItem1.Caption = "Quản lý khách sạn. Nguyễn Văn Đồng - Hà Đức Phong";
             this.barHeaderItem1.Id = 33;
             this.barHeaderItem1.Name = "barHeaderItem1";
             // 
@@ -337,19 +347,30 @@
             // 
             this.rbpHethong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rbgTaikhoan,
-            this.rpgGiaodien});
+            this.rpgGiaodien,
+            this.rbgTrogiup});
             this.rbpHethong.Name = "rbpHethong";
             this.rbpHethong.Text = "Hệ thống";
             // 
             // rbgTaikhoan
             // 
+            this.rbgTaikhoan.ItemLinks.Add(this.bbtnAdmin);
+            this.rbgTaikhoan.ItemLinks.Add(this.bbtnDoimk);
+            this.rbgTaikhoan.ItemLinks.Add(this.bbtnLogout);
             this.rbgTaikhoan.Name = "rbgTaikhoan";
             this.rbgTaikhoan.Text = "Tài khoản";
             // 
             // rpgGiaodien
             // 
+            this.rpgGiaodien.ItemLinks.Add(this.SkinRibbonGalleryBarItem);
             this.rpgGiaodien.Name = "rpgGiaodien";
             this.rpgGiaodien.Text = "Giao diện";
+            // 
+            // rbgTrogiup
+            // 
+            this.rbgTrogiup.ItemLinks.Add(this.bbtnHelp);
+            this.rbgTrogiup.Name = "rbgTrogiup";
+            this.rbgTrogiup.Text = "Trợ giúp";
             // 
             // rbpTacvu
             // 
@@ -362,16 +383,20 @@
             // 
             // rbgNV
             // 
+            this.rbgNV.ItemLinks.Add(this.bbtnAddNV);
             this.rbgNV.Name = "rbgNV";
             this.rbgNV.Text = "Nhân viên";
             // 
             // rbgKH
             // 
+            this.rbgKH.ItemLinks.Add(this.bbtnAddKH);
             this.rbgKH.Name = "rbgKH";
             this.rbgKH.Text = "Khách hàng";
             // 
             // rbgPhong
             // 
+            this.rbgPhong.ItemLinks.Add(this.bbtnQuanLyPhong);
+            this.rbgPhong.ItemLinks.Add(this.bbtnDatPhong);
             this.rbgPhong.Name = "rbgPhong";
             this.rbgPhong.Text = "Phòng";
             // 
@@ -384,6 +409,8 @@
             // 
             // rbgBaoCao
             // 
+            this.rbgBaoCao.ItemLinks.Add(this.bbtnDSNV);
+            this.rbgBaoCao.ItemLinks.Add(this.bbtnDSKH);
             this.rbgBaoCao.Name = "rbgBaoCao";
             this.rbgBaoCao.Text = "Báo cáo";
             // 
@@ -396,6 +423,7 @@
             // 
             // rbgAbout
             // 
+            this.rbgAbout.ItemLinks.Add(this.bbtnAbout);
             this.rbgAbout.Name = "rbgAbout";
             this.rbgAbout.Text = "Thông tin";
             // 
@@ -408,18 +436,22 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 631);
+            this.ribbonStatusBar1.ItemLinks.Add(this.barHeaderItem1);
+            this.ribbonStatusBar1.ItemLinks.Add(this.time);
+            this.ribbonStatusBar1.ItemLinks.Add(this.bandango);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 633);
             this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.RibbonControl;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(984, 30);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(984, 28);
             // 
             // navBarControl
             // 
             this.navBarControl.ActiveGroup = this.navBarGroup_TacVuChinh;
             this.navBarControl.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarControl.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
-            this.navBarGroup_TacVuChinh});
+            this.navBarGroup_TacVuChinh,
+            this.navBarGroup_TienIch});
             this.navBarControl.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.nbiThemkh,
             this.nbiDatphong,
@@ -431,7 +463,7 @@
             this.navBarControl.Margin = new System.Windows.Forms.Padding(4);
             this.navBarControl.Name = "navBarControl";
             this.navBarControl.OptionsNavPane.ExpandedWidth = 187;
-            this.navBarControl.Size = new System.Drawing.Size(187, 516);
+            this.navBarControl.Size = new System.Drawing.Size(187, 518);
             this.navBarControl.TabIndex = 2;
             this.navBarControl.Text = "navBarControl1";
             // 
@@ -439,6 +471,11 @@
             // 
             this.navBarGroup_TacVuChinh.Caption = "Tác vụ chính";
             this.navBarGroup_TacVuChinh.Expanded = true;
+            this.navBarGroup_TacVuChinh.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiThemkh),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiDatphong),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiThongtinKH),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiQuanlyphong)});
             this.navBarGroup_TacVuChinh.Name = "navBarGroup_TacVuChinh";
             // 
             // nbiThemkh
@@ -459,6 +496,21 @@
             this.nbiThongtinKH.Name = "nbiThongtinKH";
             this.nbiThongtinKH.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiThongtinKH_LinkClicked);
             // 
+            // nbiQuanlyphong
+            // 
+            this.nbiQuanlyphong.Caption = "Quản lý phòng";
+            this.nbiQuanlyphong.Name = "nbiQuanlyphong";
+            this.nbiQuanlyphong.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiThongtinphong_LinkClicked);
+            // 
+            // navBarGroup_TienIch
+            // 
+            this.navBarGroup_TienIch.Caption = "Tiện ích";
+            this.navBarGroup_TienIch.Expanded = true;
+            this.navBarGroup_TienIch.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiCalendar),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiCalculator)});
+            this.navBarGroup_TienIch.Name = "navBarGroup_TienIch";
+            // 
             // nbiCalendar
             // 
             this.nbiCalendar.Caption = "Calendar";
@@ -469,12 +521,6 @@
             this.nbiCalculator.Caption = "Calculator";
             this.nbiCalculator.Name = "nbiCalculator";
             // 
-            // nbiQuanlyphong
-            // 
-            this.nbiQuanlyphong.Caption = "Quản lý phòng";
-            this.nbiQuanlyphong.Name = "nbiQuanlyphong";
-            this.nbiQuanlyphong.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiThongtinphong_LinkClicked);
-            // 
             // xtraTabControl
             // 
             this.xtraTabControl.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
@@ -482,7 +528,7 @@
             this.xtraTabControl.Location = new System.Drawing.Point(187, 115);
             this.xtraTabControl.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabControl.Name = "xtraTabControl";
-            this.xtraTabControl.Size = new System.Drawing.Size(797, 516);
+            this.xtraTabControl.Size = new System.Drawing.Size(797, 518);
             this.xtraTabControl.TabIndex = 3;
             this.xtraTabControl.SelectedPageChanged += new DevExpress.XtraTab.TabPageChangedEventHandler(this.xtraTabControl_SelectedPageChanged);
             this.xtraTabControl.CloseButtonClick += new System.EventHandler(this.xtraTabControl_CloseButtonClick);
@@ -512,7 +558,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1000, 700);
-            this.MinimumSize = new System.Drawing.Size(1000, 700);
+            this.MinimumSize = new System.Drawing.Size(1000, 678);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý Khách sạn";
@@ -534,6 +580,7 @@
         internal DevExpress.XtraBars.BarButtonItem bbtnAdmin;
         internal DevExpress.XtraBars.BarButtonItem bbtnDoimk;
         internal DevExpress.XtraBars.BarButtonItem bbtnLogout;
+        internal DevExpress.XtraBars.BarButtonItem bbtnHelp;
         internal DevExpress.XtraBars.SkinRibbonGalleryBarItem SkinRibbonGalleryBarItem;
         internal DevExpress.XtraBars.BarButtonItem bbtnQLdocgia;
         internal DevExpress.XtraBars.BarButtonItem bbtnQLSach;
@@ -548,6 +595,7 @@
         internal DevExpress.XtraBars.Ribbon.RibbonPage rbpHethong;
         internal DevExpress.XtraBars.Ribbon.RibbonPageGroup rbgTaikhoan;
         internal DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgGiaodien;
+        internal DevExpress.XtraBars.Ribbon.RibbonPageGroup rbgTrogiup;
         internal DevExpress.XtraBars.Ribbon.RibbonPage rbpTacvu;
         internal DevExpress.XtraBars.Ribbon.RibbonPage rbpBaocao;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
@@ -555,6 +603,7 @@
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup_TacVuChinh;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl;
         private DevExpress.XtraBars.Ribbon.RibbonPage rbpAbout;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup_TienIch;
         private DevExpress.XtraNavBar.NavBarItem nbiThemkh;
         private DevExpress.XtraNavBar.NavBarItem nbiDatphong;
         private DevExpress.XtraNavBar.NavBarItem nbiThongtinKH;
