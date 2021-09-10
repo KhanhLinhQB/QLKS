@@ -74,9 +74,9 @@
             this.nbiThemkh = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiDatphong = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiThongtinKH = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiQuanlyphong = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiCalendar = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiCalculator = new DevExpress.XtraNavBar.NavBarItem();
+            this.nbiQuanlyphong = new DevExpress.XtraNavBar.NavBarItem();
             this.xtraTabControl = new DevExpress.XtraTab.XtraTabControl();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
@@ -408,11 +408,11 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 633);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 631);
             this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.RibbonControl;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(984, 28);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(984, 30);
             // 
             // navBarControl
             // 
@@ -431,7 +431,7 @@
             this.navBarControl.Margin = new System.Windows.Forms.Padding(4);
             this.navBarControl.Name = "navBarControl";
             this.navBarControl.OptionsNavPane.ExpandedWidth = 187;
-            this.navBarControl.Size = new System.Drawing.Size(187, 518);
+            this.navBarControl.Size = new System.Drawing.Size(187, 516);
             this.navBarControl.TabIndex = 2;
             this.navBarControl.Text = "navBarControl1";
             // 
@@ -459,12 +459,6 @@
             this.nbiThongtinKH.Name = "nbiThongtinKH";
             this.nbiThongtinKH.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiThongtinKH_LinkClicked);
             // 
-            // nbiQuanlyphong
-            // 
-            this.nbiQuanlyphong.Caption = "Quản lý phòng";
-            this.nbiQuanlyphong.Name = "nbiQuanlyphong";
-            this.nbiQuanlyphong.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiThongtinphong_LinkClicked);
-            // 
             // nbiCalendar
             // 
             this.nbiCalendar.Caption = "Calendar";
@@ -475,6 +469,12 @@
             this.nbiCalculator.Caption = "Calculator";
             this.nbiCalculator.Name = "nbiCalculator";
             // 
+            // nbiQuanlyphong
+            // 
+            this.nbiQuanlyphong.Caption = "Quản lý phòng";
+            this.nbiQuanlyphong.Name = "nbiQuanlyphong";
+            this.nbiQuanlyphong.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiThongtinphong_LinkClicked);
+            // 
             // xtraTabControl
             // 
             this.xtraTabControl.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
@@ -482,7 +482,7 @@
             this.xtraTabControl.Location = new System.Drawing.Point(187, 115);
             this.xtraTabControl.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabControl.Name = "xtraTabControl";
-            this.xtraTabControl.Size = new System.Drawing.Size(797, 518);
+            this.xtraTabControl.Size = new System.Drawing.Size(797, 516);
             this.xtraTabControl.TabIndex = 3;
             this.xtraTabControl.SelectedPageChanged += new DevExpress.XtraTab.TabPageChangedEventHandler(this.xtraTabControl_SelectedPageChanged);
             this.xtraTabControl.CloseButtonClick += new System.EventHandler(this.xtraTabControl_CloseButtonClick);
