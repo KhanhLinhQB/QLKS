@@ -77,7 +77,6 @@ D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\de\DevExpress.Sparkline.v21.1
 D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\es\DevExpress.Sparkline.v21.1.Core.resources.dll
 D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\ja\DevExpress.Sparkline.v21.1.Core.resources.dll
 D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\ru\DevExpress.Sparkline.v21.1.Core.resources.dll
-D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\HotelManagement.csproj.AssemblyReference.cache
 D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.frmDSKH.resources
 D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.frmDSNV.resources
 D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.frmLogin.resources
@@ -193,3 +192,5 @@ C:\Users\nguye\Documents\GitHub\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Hot
 C:\Users\nguye\Documents\GitHub\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 C:\Users\nguye\Documents\GitHub\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 C:\Users\nguye\Documents\GitHub\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.GUI.ChangePasswork_GUI.resources
+D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.GUI.ChangePasswork_GUI.resources
+D:\DA\QLKS\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\HotelManagement.csproj.AssemblyReference.cache

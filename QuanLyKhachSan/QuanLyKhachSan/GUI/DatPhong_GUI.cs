@@ -181,8 +181,8 @@ namespace QuanLyKhachSan.GUI
             txtmakh.Text = dgvdp.CurrentRow.Cells[2].Value.ToString();
             txtLpDat.Text = dgvdp.CurrentRow.Cells[3].Value.ToString();
             dtpngaydat.Value = Convert.ToDateTime(dgvdp.CurrentRow.Cells[4].Value);
-            dtpngayden.Value = Convert.ToDateTime(dgvdp.CurrentRow.Cells[5].Value);
-            dtpngaydi.Value = Convert.ToDateTime(dgvdp.CurrentRow.Cells[6].Value);
+            dtpngayden.Value = Convert.ToDateTime(dgvdp.CurrentRow.Cells[5].Value.ToString());
+            dtpngaydi.Value = Convert.ToDateTime(dgvdp.CurrentRow.Cells[6].Value.ToString());
             txttiencoc.Text = dgvdp.CurrentRow.Cells[7].Value.ToString();
             txtsoluong.Text = dgvdp.CurrentRow.Cells[8].Value.ToString();
             ckbtrangtrai.Checked = Convert.ToBoolean(dgvdp.CurrentRow.Cells[9].Value);
@@ -378,7 +378,7 @@ namespace QuanLyKhachSan.GUI
         private string getmahd()
         {
             int id;
-            id = int.Parse(db.GetLastID("hoadon", "mahd").Substring(2, 3));
+            id = int.Parse(db.GetLastID("Bill", "IdBill").Substring(2, 3));
             if (id < 9)
                 return "HD00" + (id + 1).ToString();
             else

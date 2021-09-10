@@ -30,16 +30,6 @@
         {
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.dgvdp = new System.Windows.Forms.DataGridView();
-            this.madp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.makh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiphong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaydat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayden = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaydi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tiendatcoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trangthai = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.btnxoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnluu = new DevExpress.XtraEditors.SimpleButton();
@@ -72,6 +62,16 @@
             this.listDatphong = new System.Windows.Forms.ListBox();
             this.listPhong = new System.Windows.Forms.ListBox();
             this.cbloaiphong = new System.Windows.Forms.ComboBox();
+            this.madp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.makh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiphong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateBook = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateCheckIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateCheckOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tiendatcoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trangthai = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdp)).BeginInit();
@@ -108,9 +108,9 @@
             this.manv,
             this.makh,
             this.loaiphong,
-            this.ngaydat,
-            this.ngayden,
-            this.ngaydi,
+            this.DateBook,
+            this.DateCheckIn,
+            this.DateCheckOut,
             this.tiendatcoc,
             this.soluong,
             this.trangthai});
@@ -122,107 +122,6 @@
             this.dgvdp.Size = new System.Drawing.Size(1118, 314);
             this.dgvdp.TabIndex = 0;
             this.dgvdp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdp_CellClick);
-            // 
-            // madp
-            // 
-            this.madp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.madp.DataPropertyName = "IdBooking";
-            this.madp.HeaderText = "Mã DP";
-            this.madp.MinimumWidth = 8;
-            this.madp.Name = "madp";
-            this.madp.ReadOnly = true;
-            this.madp.Width = 90;
-            // 
-            // manv
-            // 
-            this.manv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.manv.DataPropertyName = "IdEmployee";
-            this.manv.HeaderText = "Mã NV";
-            this.manv.MinimumWidth = 8;
-            this.manv.Name = "manv";
-            this.manv.ReadOnly = true;
-            this.manv.Width = 91;
-            // 
-            // makh
-            // 
-            this.makh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.makh.DataPropertyName = "IdCustomer";
-            this.makh.HeaderText = "Mã KH";
-            this.makh.MinimumWidth = 8;
-            this.makh.Name = "makh";
-            this.makh.ReadOnly = true;
-            this.makh.Width = 90;
-            // 
-            // loaiphong
-            // 
-            this.loaiphong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.loaiphong.DataPropertyName = "RoomName";
-            this.loaiphong.HeaderText = "Loại phòng";
-            this.loaiphong.MinimumWidth = 8;
-            this.loaiphong.Name = "loaiphong";
-            this.loaiphong.ReadOnly = true;
-            this.loaiphong.Width = 124;
-            // 
-            // ngaydat
-            // 
-            this.ngaydat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ngaydat.DataPropertyName = "DateBook";
-            this.ngaydat.HeaderText = "Ngày đặt";
-            this.ngaydat.MinimumWidth = 8;
-            this.ngaydat.Name = "ngaydat";
-            this.ngaydat.ReadOnly = true;
-            this.ngaydat.Width = 108;
-            // 
-            // ngayden
-            // 
-            this.ngayden.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ngayden.DataPropertyName = "DateCheckIn";
-            this.ngayden.HeaderText = "Ngày đến";
-            this.ngayden.MinimumWidth = 8;
-            this.ngayden.Name = "ngayden";
-            this.ngayden.ReadOnly = true;
-            this.ngayden.Width = 112;
-            // 
-            // ngaydi
-            // 
-            this.ngaydi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ngaydi.DataPropertyName = "DateCheckOut";
-            this.ngaydi.HeaderText = "Ngày đi";
-            this.ngaydi.MinimumWidth = 8;
-            this.ngaydi.Name = "ngaydi";
-            this.ngaydi.ReadOnly = true;
-            this.ngaydi.Width = 99;
-            // 
-            // tiendatcoc
-            // 
-            this.tiendatcoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.tiendatcoc.DataPropertyName = "MoneyDeposit";
-            this.tiendatcoc.HeaderText = "Đặt cọc";
-            this.tiendatcoc.MinimumWidth = 8;
-            this.tiendatcoc.Name = "tiendatcoc";
-            this.tiendatcoc.ReadOnly = true;
-            this.tiendatcoc.Width = 97;
-            // 
-            // soluong
-            // 
-            this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.soluong.DataPropertyName = "Quantity";
-            this.soluong.HeaderText = "Số lượng";
-            this.soluong.MinimumWidth = 8;
-            this.soluong.Name = "soluong";
-            this.soluong.ReadOnly = true;
-            this.soluong.Width = 109;
-            // 
-            // trangthai
-            // 
-            this.trangthai.DataPropertyName = "status";
-            this.trangthai.HeaderText = "Tr.Thái";
-            this.trangthai.MinimumWidth = 8;
-            this.trangthai.Name = "trangthai";
-            this.trangthai.ReadOnly = true;
-            this.trangthai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.trangthai.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.trangthai.Width = 67;
             // 
             // groupControl2
             // 
@@ -337,6 +236,7 @@
             // 
             this.dtpngaydi.Enabled = false;
             this.dtpngaydi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpngaydi.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dtpngaydi.Location = new System.Drawing.Point(144, 237);
             this.dtpngaydi.Margin = new System.Windows.Forms.Padding(4);
             this.dtpngaydi.MinDate = new System.DateTime(1753, 12, 31, 0, 0, 0, 0);
@@ -350,10 +250,11 @@
             this.dtpngayden.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpngayden.Location = new System.Drawing.Point(144, 194);
             this.dtpngayden.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpngayden.MinDate = new System.DateTime(1900, 12, 31, 0, 0, 0, 0);
+            this.dtpngayden.MinDate = new System.DateTime(1753, 5, 31, 0, 0, 0, 0);
             this.dtpngayden.Name = "dtpngayden";
             this.dtpngayden.Size = new System.Drawing.Size(205, 27);
             this.dtpngayden.TabIndex = 4;
+            this.dtpngayden.Value = new System.DateTime(2021, 9, 10, 19, 13, 47, 0);
             // 
             // txttiencoc
             // 
@@ -602,6 +503,107 @@
             this.cbloaiphong.TabIndex = 9;
             this.cbloaiphong.SelectedIndexChanged += new System.EventHandler(this.cbloaiphong_SelectedIndexChanged);
             // 
+            // madp
+            // 
+            this.madp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.madp.DataPropertyName = "IdBooking";
+            this.madp.HeaderText = "Mã DP";
+            this.madp.MinimumWidth = 8;
+            this.madp.Name = "madp";
+            this.madp.ReadOnly = true;
+            this.madp.Width = 90;
+            // 
+            // manv
+            // 
+            this.manv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.manv.DataPropertyName = "IdEmployee";
+            this.manv.HeaderText = "Mã NV";
+            this.manv.MinimumWidth = 8;
+            this.manv.Name = "manv";
+            this.manv.ReadOnly = true;
+            this.manv.Width = 91;
+            // 
+            // makh
+            // 
+            this.makh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.makh.DataPropertyName = "IdCustomer";
+            this.makh.HeaderText = "Mã KH";
+            this.makh.MinimumWidth = 8;
+            this.makh.Name = "makh";
+            this.makh.ReadOnly = true;
+            this.makh.Width = 90;
+            // 
+            // loaiphong
+            // 
+            this.loaiphong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.loaiphong.DataPropertyName = "RoomName";
+            this.loaiphong.HeaderText = "Loại phòng";
+            this.loaiphong.MinimumWidth = 8;
+            this.loaiphong.Name = "loaiphong";
+            this.loaiphong.ReadOnly = true;
+            this.loaiphong.Width = 124;
+            // 
+            // DateBook
+            // 
+            this.DateBook.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.DateBook.DataPropertyName = "DateBook";
+            this.DateBook.HeaderText = "Ngày đặt";
+            this.DateBook.MinimumWidth = 8;
+            this.DateBook.Name = "DateBook";
+            this.DateBook.ReadOnly = true;
+            this.DateBook.Width = 108;
+            // 
+            // DateCheckIn
+            // 
+            this.DateCheckIn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.DateCheckIn.DataPropertyName = "DateCheckIn";
+            this.DateCheckIn.HeaderText = "Ngày đến";
+            this.DateCheckIn.MinimumWidth = 8;
+            this.DateCheckIn.Name = "DateCheckIn";
+            this.DateCheckIn.ReadOnly = true;
+            this.DateCheckIn.Width = 112;
+            // 
+            // DateCheckOut
+            // 
+            this.DateCheckOut.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.DateCheckOut.DataPropertyName = "DateCheckOut";
+            this.DateCheckOut.HeaderText = "Ngày đi";
+            this.DateCheckOut.MinimumWidth = 8;
+            this.DateCheckOut.Name = "DateCheckOut";
+            this.DateCheckOut.ReadOnly = true;
+            this.DateCheckOut.Width = 99;
+            // 
+            // tiendatcoc
+            // 
+            this.tiendatcoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.tiendatcoc.DataPropertyName = "MoneyDeposit";
+            this.tiendatcoc.HeaderText = "Đặt cọc";
+            this.tiendatcoc.MinimumWidth = 8;
+            this.tiendatcoc.Name = "tiendatcoc";
+            this.tiendatcoc.ReadOnly = true;
+            this.tiendatcoc.Width = 97;
+            // 
+            // soluong
+            // 
+            this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.soluong.DataPropertyName = "Quantity";
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 8;
+            this.soluong.Name = "soluong";
+            this.soluong.ReadOnly = true;
+            this.soluong.Width = 109;
+            // 
+            // trangthai
+            // 
+            this.trangthai.DataPropertyName = "status";
+            this.trangthai.HeaderText = "Tr.Thái";
+            this.trangthai.MinimumWidth = 8;
+            this.trangthai.Name = "trangthai";
+            this.trangthai.ReadOnly = true;
+            this.trangthai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.trangthai.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.trangthai.Width = 67;
+            // 
             // DatPhong_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -674,9 +676,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn manv;
         private System.Windows.Forms.DataGridViewTextBoxColumn makh;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiphong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaydat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngayden;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaydi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateBook;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateCheckIn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateCheckOut;
         private System.Windows.Forms.DataGridViewTextBoxColumn tiendatcoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
         private System.Windows.Forms.DataGridViewCheckBoxColumn trangthai;
