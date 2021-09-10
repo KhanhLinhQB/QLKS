@@ -108,7 +108,7 @@ namespace QuanLyKhachSan.GUI
         private string setmanv()
         {
             int id;
-            id = int.Parse(db.GetLastID("nhanvien", "manv").Substring(2, 3));
+            id = int.Parse(db.GetLastID("Employee", "IdEmployee").Substring(2, 3));
             if (id < 9)
                 return "NV00" + (id + 1).ToString();
             else

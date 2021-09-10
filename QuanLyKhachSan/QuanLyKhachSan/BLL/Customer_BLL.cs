@@ -23,7 +23,7 @@ namespace QuanLyKhachSan.BLL
         {
             string[] param = {"@makh", "@hoten", "@cmnd", "@sdt", "@email", "@diachi" };
             object[] values = {kh.IdCustomer, kh.NameCustomer, kh.IdCardCustomer, kh.PhoneNumber, kh.EmailCustomer, kh.AddressCustomer };
-            string query = "Insert Into khachhang Values(@makh,@hoten,@cmnd,@sdt,@email,@diachi)";
+            string query = "Insert Into Customer Values(@makh,@hoten,@cmnd,@sdt,@email,@diachi)";
             return db.ExecuteNonQueryPara(query, param, values);
         }
 

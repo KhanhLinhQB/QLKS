@@ -93,7 +93,7 @@ namespace QuanLyKhachSan.GUI
         private string setmakh()
         {
             int id;
-            id = int.Parse(db.GetLastID("khachhang", "makh").Substring(2,3));
+            id = int.Parse(db.GetLastID("Customer", "IdCustomer").Substring(2,3));
             if (id < 9)
                 return "KH00" + (id + 1).ToString();
             else

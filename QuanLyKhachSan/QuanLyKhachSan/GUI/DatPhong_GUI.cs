@@ -191,7 +191,7 @@ namespace QuanLyKhachSan.GUI
         private string setmadp()
         {
             int id;
-            id = int.Parse(db.GetLastID("datphong", "madp").Substring(2, 3));
+            id = int.Parse(db.GetLastID("Booking", "IdBooking").Substring(2, 3));
             if (id < 9)
                 return "DP00" + (id + 1).ToString();
             else
@@ -464,8 +464,8 @@ namespace QuanLyKhachSan.GUI
             bsp.DataSource = pbl.dsph(tenlp);
             listDatphong.DataBindings.Clear();
             listDatphong.DataSource = bsp;
-            listDatphong.DisplayMember = "maphong";
-            listDatphong.ValueMember = "maphong";
+            listDatphong.DisplayMember = "IdRoom";
+            listDatphong.ValueMember = "IdRoom";
             listPhong.DataSource = null;
             listPhong.DataBindings.Clear();
             txtsoluong.Text = pbl.dsph(tenlp).Rows.Count.ToString();

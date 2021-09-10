@@ -82,7 +82,7 @@ namespace QuanLyKhachSan.GUI
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             string sql = "Insert Into Permission Values('" + cbmanv.SelectedValue.ToString()+"','"+id+"','"+txtmknv.Text+"')";
-            string sql2 = "Update Permission set id='" + id + "',matkhau='" + txtmknv.Text + "' where IdEmployee = '" + cbmanv.SelectedValue.ToString() + "'";
+            string sql2 = "Update Permission set id='" + id + "',password='" + txtmknv.Text + "' where IdEmployee = '" + cbmanv.SelectedValue.ToString() + "'";
             if (txtmknv.Text.Length == 3)
             {
                 thongbao.Text = "";
