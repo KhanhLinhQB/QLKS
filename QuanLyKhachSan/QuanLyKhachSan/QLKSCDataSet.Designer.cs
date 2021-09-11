@@ -349,25 +349,25 @@ namespace QuanLyKhachSan {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class gethoadonDataTable : global::System.Data.TypedTableBase<gethoadonRow> {
             
-            private global::System.Data.DataColumn columnmahd;
+            private global::System.Data.DataColumn columnIdBill;
             
-            private global::System.Data.DataColumn columnngaylap;
+            private global::System.Data.DataColumn columnDateBilling;
             
-            private global::System.Data.DataColumn columnmadp;
+            private global::System.Data.DataColumn columnIdBooking;
             
-            private global::System.Data.DataColumn columnmakh;
+            private global::System.Data.DataColumn columnIdCustomer;
             
-            private global::System.Data.DataColumn columnhoten;
+            private global::System.Data.DataColumn columnNameCustomer;
             
-            private global::System.Data.DataColumn columntenlp;
+            private global::System.Data.DataColumn columnRoomName;
             
-            private global::System.Data.DataColumn columnsoluong;
+            private global::System.Data.DataColumn columnQuantity;
             
-            private global::System.Data.DataColumn columnngayden;
+            private global::System.Data.DataColumn columnDateCheckIn;
             
-            private global::System.Data.DataColumn columnngaydi;
+            private global::System.Data.DataColumn columnDateCheckOut;
             
-            private global::System.Data.DataColumn columntongtien;
+            private global::System.Data.DataColumn columnTotal;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -404,81 +404,81 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn mahdColumn {
+            public global::System.Data.DataColumn IdBillColumn {
                 get {
-                    return this.columnmahd;
+                    return this.columnIdBill;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ngaylapColumn {
+            public global::System.Data.DataColumn DateBillingColumn {
                 get {
-                    return this.columnngaylap;
+                    return this.columnDateBilling;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn madpColumn {
+            public global::System.Data.DataColumn IdBookingColumn {
                 get {
-                    return this.columnmadp;
+                    return this.columnIdBooking;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn makhColumn {
+            public global::System.Data.DataColumn IdCustomerColumn {
                 get {
-                    return this.columnmakh;
+                    return this.columnIdCustomer;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn hotenColumn {
+            public global::System.Data.DataColumn NameCustomerColumn {
                 get {
-                    return this.columnhoten;
+                    return this.columnNameCustomer;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn tenlpColumn {
+            public global::System.Data.DataColumn RoomNameColumn {
                 get {
-                    return this.columntenlp;
+                    return this.columnRoomName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn soluongColumn {
+            public global::System.Data.DataColumn QuantityColumn {
                 get {
-                    return this.columnsoluong;
+                    return this.columnQuantity;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ngaydenColumn {
+            public global::System.Data.DataColumn DateCheckInColumn {
                 get {
-                    return this.columnngayden;
+                    return this.columnDateCheckIn;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ngaydiColumn {
+            public global::System.Data.DataColumn DateCheckOutColumn {
                 get {
-                    return this.columnngaydi;
+                    return this.columnDateCheckOut;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn tongtienColumn {
+            public global::System.Data.DataColumn TotalColumn {
                 get {
-                    return this.columntongtien;
+                    return this.columnTotal;
                 }
             }
             
@@ -519,19 +519,19 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public gethoadonRow AddgethoadonRow(string mahd, System.DateTime ngaylap, string madp, string makh, string hoten, string tenlp, int soluong, System.DateTime ngayden, System.DateTime ngaydi, int tongtien) {
+            public gethoadonRow AddgethoadonRow(string IdBill, System.DateTime DateBilling, string IdBooking, string IdCustomer, string NameCustomer, string RoomName, int Quantity, System.DateTime DateCheckIn, System.DateTime DateCheckOut, int Total) {
                 gethoadonRow rowgethoadonRow = ((gethoadonRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        mahd,
-                        ngaylap,
-                        madp,
-                        makh,
-                        hoten,
-                        tenlp,
-                        soluong,
-                        ngayden,
-                        ngaydi,
-                        tongtien};
+                        IdBill,
+                        DateBilling,
+                        IdBooking,
+                        IdCustomer,
+                        NameCustomer,
+                        RoomName,
+                        Quantity,
+                        DateCheckIn,
+                        DateCheckOut,
+                        Total};
                 rowgethoadonRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowgethoadonRow);
                 return rowgethoadonRow;
@@ -554,56 +554,56 @@ namespace QuanLyKhachSan {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnmahd = base.Columns["mahd"];
-                this.columnngaylap = base.Columns["ngaylap"];
-                this.columnmadp = base.Columns["madp"];
-                this.columnmakh = base.Columns["makh"];
-                this.columnhoten = base.Columns["hoten"];
-                this.columntenlp = base.Columns["tenlp"];
-                this.columnsoluong = base.Columns["soluong"];
-                this.columnngayden = base.Columns["ngayden"];
-                this.columnngaydi = base.Columns["ngaydi"];
-                this.columntongtien = base.Columns["tongtien"];
+                this.columnIdBill = base.Columns["IdBill"];
+                this.columnDateBilling = base.Columns["DateBilling"];
+                this.columnIdBooking = base.Columns["IdBooking"];
+                this.columnIdCustomer = base.Columns["IdCustomer"];
+                this.columnNameCustomer = base.Columns["NameCustomer"];
+                this.columnRoomName = base.Columns["RoomName"];
+                this.columnQuantity = base.Columns["Quantity"];
+                this.columnDateCheckIn = base.Columns["DateCheckIn"];
+                this.columnDateCheckOut = base.Columns["DateCheckOut"];
+                this.columnTotal = base.Columns["Total"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnmahd = new global::System.Data.DataColumn("mahd", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmahd);
-                this.columnngaylap = new global::System.Data.DataColumn("ngaylap", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnngaylap);
-                this.columnmadp = new global::System.Data.DataColumn("madp", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmadp);
-                this.columnmakh = new global::System.Data.DataColumn("makh", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmakh);
-                this.columnhoten = new global::System.Data.DataColumn("hoten", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnhoten);
-                this.columntenlp = new global::System.Data.DataColumn("tenlp", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntenlp);
-                this.columnsoluong = new global::System.Data.DataColumn("soluong", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsoluong);
-                this.columnngayden = new global::System.Data.DataColumn("ngayden", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnngayden);
-                this.columnngaydi = new global::System.Data.DataColumn("ngaydi", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnngaydi);
-                this.columntongtien = new global::System.Data.DataColumn("tongtien", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntongtien);
-                this.columnmahd.AllowDBNull = false;
-                this.columnmahd.MaxLength = 5;
-                this.columnngaylap.AllowDBNull = false;
-                this.columnmadp.AllowDBNull = false;
-                this.columnmadp.MaxLength = 5;
-                this.columnmakh.AllowDBNull = false;
-                this.columnmakh.MaxLength = 5;
-                this.columnhoten.AllowDBNull = false;
-                this.columnhoten.MaxLength = 30;
-                this.columntenlp.AllowDBNull = false;
-                this.columntenlp.MaxLength = 10;
-                this.columnsoluong.AllowDBNull = false;
-                this.columnngayden.AllowDBNull = false;
-                this.columnngaydi.AllowDBNull = false;
-                this.columntongtien.AllowDBNull = false;
+                this.columnIdBill = new global::System.Data.DataColumn("IdBill", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdBill);
+                this.columnDateBilling = new global::System.Data.DataColumn("DateBilling", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDateBilling);
+                this.columnIdBooking = new global::System.Data.DataColumn("IdBooking", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdBooking);
+                this.columnIdCustomer = new global::System.Data.DataColumn("IdCustomer", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdCustomer);
+                this.columnNameCustomer = new global::System.Data.DataColumn("NameCustomer", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNameCustomer);
+                this.columnRoomName = new global::System.Data.DataColumn("RoomName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRoomName);
+                this.columnQuantity = new global::System.Data.DataColumn("Quantity", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQuantity);
+                this.columnDateCheckIn = new global::System.Data.DataColumn("DateCheckIn", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDateCheckIn);
+                this.columnDateCheckOut = new global::System.Data.DataColumn("DateCheckOut", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDateCheckOut);
+                this.columnTotal = new global::System.Data.DataColumn("Total", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotal);
+                this.columnIdBill.AllowDBNull = false;
+                this.columnIdBill.MaxLength = 5;
+                this.columnDateBilling.AllowDBNull = false;
+                this.columnIdBooking.AllowDBNull = false;
+                this.columnIdBooking.MaxLength = 5;
+                this.columnIdCustomer.AllowDBNull = false;
+                this.columnIdCustomer.MaxLength = 5;
+                this.columnNameCustomer.AllowDBNull = false;
+                this.columnNameCustomer.MaxLength = 50;
+                this.columnRoomName.AllowDBNull = false;
+                this.columnRoomName.MaxLength = 10;
+                this.columnQuantity.AllowDBNull = false;
+                this.columnDateCheckIn.AllowDBNull = false;
+                this.columnDateCheckOut.AllowDBNull = false;
+                this.columnTotal.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1469,111 +1469,111 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string mahd {
+            public string IdBill {
                 get {
-                    return ((string)(this[this.tablegethoadon.mahdColumn]));
+                    return ((string)(this[this.tablegethoadon.IdBillColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.mahdColumn] = value;
+                    this[this.tablegethoadon.IdBillColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime ngaylap {
+            public System.DateTime DateBilling {
                 get {
-                    return ((global::System.DateTime)(this[this.tablegethoadon.ngaylapColumn]));
+                    return ((global::System.DateTime)(this[this.tablegethoadon.DateBillingColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.ngaylapColumn] = value;
+                    this[this.tablegethoadon.DateBillingColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string madp {
+            public string IdBooking {
                 get {
-                    return ((string)(this[this.tablegethoadon.madpColumn]));
+                    return ((string)(this[this.tablegethoadon.IdBookingColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.madpColumn] = value;
+                    this[this.tablegethoadon.IdBookingColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string makh {
+            public string IdCustomer {
                 get {
-                    return ((string)(this[this.tablegethoadon.makhColumn]));
+                    return ((string)(this[this.tablegethoadon.IdCustomerColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.makhColumn] = value;
+                    this[this.tablegethoadon.IdCustomerColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string hoten {
+            public string NameCustomer {
                 get {
-                    return ((string)(this[this.tablegethoadon.hotenColumn]));
+                    return ((string)(this[this.tablegethoadon.NameCustomerColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.hotenColumn] = value;
+                    this[this.tablegethoadon.NameCustomerColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string tenlp {
+            public string RoomName {
                 get {
-                    return ((string)(this[this.tablegethoadon.tenlpColumn]));
+                    return ((string)(this[this.tablegethoadon.RoomNameColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.tenlpColumn] = value;
+                    this[this.tablegethoadon.RoomNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int soluong {
+            public int Quantity {
                 get {
-                    return ((int)(this[this.tablegethoadon.soluongColumn]));
+                    return ((int)(this[this.tablegethoadon.QuantityColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.soluongColumn] = value;
+                    this[this.tablegethoadon.QuantityColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime ngayden {
+            public System.DateTime DateCheckIn {
                 get {
-                    return ((global::System.DateTime)(this[this.tablegethoadon.ngaydenColumn]));
+                    return ((global::System.DateTime)(this[this.tablegethoadon.DateCheckInColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.ngaydenColumn] = value;
+                    this[this.tablegethoadon.DateCheckInColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime ngaydi {
+            public System.DateTime DateCheckOut {
                 get {
-                    return ((global::System.DateTime)(this[this.tablegethoadon.ngaydiColumn]));
+                    return ((global::System.DateTime)(this[this.tablegethoadon.DateCheckOutColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.ngaydiColumn] = value;
+                    this[this.tablegethoadon.DateCheckOutColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int tongtien {
+            public int Total {
                 get {
-                    return ((int)(this[this.tablegethoadon.tongtienColumn]));
+                    return ((int)(this[this.tablegethoadon.TotalColumn]));
                 }
                 set {
-                    this[this.tablegethoadon.tongtienColumn] = value;
+                    this[this.tablegethoadon.TotalColumn] = value;
                 }
             }
         }
@@ -2034,16 +2034,16 @@ namespace QuanLyKhachSan.QLKSCDataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "gethoadon";
-            tableMapping.ColumnMappings.Add("mahd", "mahd");
-            tableMapping.ColumnMappings.Add("ngaylap", "ngaylap");
-            tableMapping.ColumnMappings.Add("madp", "madp");
-            tableMapping.ColumnMappings.Add("makh", "makh");
-            tableMapping.ColumnMappings.Add("hoten", "hoten");
-            tableMapping.ColumnMappings.Add("tenlp", "tenlp");
-            tableMapping.ColumnMappings.Add("soluong", "soluong");
-            tableMapping.ColumnMappings.Add("ngayden", "ngayden");
-            tableMapping.ColumnMappings.Add("ngaydi", "ngaydi");
-            tableMapping.ColumnMappings.Add("tongtien", "tongtien");
+            tableMapping.ColumnMappings.Add("IdBill", "IdBill");
+            tableMapping.ColumnMappings.Add("DateBilling", "DateBilling");
+            tableMapping.ColumnMappings.Add("IdBooking", "IdBooking");
+            tableMapping.ColumnMappings.Add("IdCustomer", "IdCustomer");
+            tableMapping.ColumnMappings.Add("NameCustomer", "NameCustomer");
+            tableMapping.ColumnMappings.Add("RoomName", "RoomName");
+            tableMapping.ColumnMappings.Add("Quantity", "Quantity");
+            tableMapping.ColumnMappings.Add("DateCheckIn", "DateCheckIn");
+            tableMapping.ColumnMappings.Add("DateCheckOut", "DateCheckOut");
+            tableMapping.ColumnMappings.Add("Total", "Total");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -2060,23 +2060,23 @@ namespace QuanLyKhachSan.QLKSCDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.gethoadon";
+            this._commandCollection[0].CommandText = "dbo.getbill";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@madp", global::System.Data.SqlDbType.Char, 5, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IdBooking", global::System.Data.SqlDbType.Char, 5, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QLKSCDataSet.gethoadonDataTable dataTable, string madp) {
+        public virtual int Fill(QLKSCDataSet.gethoadonDataTable dataTable, string IdBooking) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((madp == null)) {
+            if ((IdBooking == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(madp));
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(IdBooking));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2089,13 +2089,13 @@ namespace QuanLyKhachSan.QLKSCDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QLKSCDataSet.gethoadonDataTable GetData(string madp) {
+        public virtual QLKSCDataSet.gethoadonDataTable GetData(string IdBooking) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((madp == null)) {
+            if ((IdBooking == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(madp));
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(IdBooking));
             }
             QLKSCDataSet.gethoadonDataTable dataTable = new QLKSCDataSet.gethoadonDataTable();
             this.Adapter.Fill(dataTable);

@@ -42,7 +42,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!mahd.Value</Value>
+                <Value>=Fields!IdBill.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                   <FontSize>11pt</FontSize>
@@ -110,7 +110,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!ngaylap.Value</Value>
+                <Value>=Fields!DateBilling.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                   <FontSize>11pt</FontSize>
@@ -177,7 +177,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!madp.Value</Value>
+                <Value>=Fields!IdBooking.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                 </Style>
@@ -242,7 +242,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!tongtien.Value</Value>
+                <Value>=Fields!Total.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                   <FontWeight>Bold</FontWeight>
@@ -308,7 +308,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!makh.Value</Value>
+                <Value>=Fields!IdCustomer.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                 </Style>
@@ -384,7 +384,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!hoten.Value</Value>
+                <Value>=Fields!NameCustomer.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                 </Style>
@@ -448,7 +448,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!tenlp.Value</Value>
+                <Value>=Fields!RoomName.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                 </Style>
@@ -512,7 +512,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!soluong.Value</Value>
+                <Value>=Fields!Quantity.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                 </Style>
@@ -576,7 +576,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!ngayden.Value</Value>
+                <Value>=Fields!DateCheckIn.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                 </Style>
@@ -640,7 +640,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Fields!ngaydi.Value</Value>
+                <Value>=Fields!DateCheckOut.Value</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                 </Style>
@@ -717,8 +717,8 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>KHÁCH SẠN A 2 Z
-48 Cao Thắng, Hải Châu, Đà Nẵng</Value>
+                  <Value>KHÁCH SẠN KHÁNH LINH
+160 An Nhơn Tây, An Nhơn Tây, Củ Chi</Value>
                   <Style>
                     <FontFamily>Tahoma</FontFamily>
                     <FontSize>11pt</FontSize>
@@ -735,7 +735,7 @@
           <rd:DefaultName>Textbox46</rd:DefaultName>
           <Top>0.03in</Top>
           <Height>0.46181in</Height>
-          <Width>2.9675in</Width>
+          <Width>3.35292in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -827,50 +827,50 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="mahd">
-          <DataField>mahd</DataField>
+        <Field Name="IdBill">
+          <DataField>IdBill</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ngaylap">
-          <DataField>ngaylap</DataField>
+        <Field Name="DateBilling">
+          <DataField>DateBilling</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="madp">
-          <DataField>madp</DataField>
+        <Field Name="IdBooking">
+          <DataField>IdBooking</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="makh">
-          <DataField>makh</DataField>
+        <Field Name="IdCustomer">
+          <DataField>IdCustomer</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="hoten">
-          <DataField>hoten</DataField>
+        <Field Name="NameCustomer">
+          <DataField>NameCustomer</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="tenlp">
-          <DataField>tenlp</DataField>
+        <Field Name="RoomName">
+          <DataField>RoomName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="soluong">
-          <DataField>soluong</DataField>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="ngayden">
-          <DataField>ngayden</DataField>
+        <Field Name="DateCheckIn">
+          <DataField>DateCheckIn</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="ngaydi">
-          <DataField>ngaydi</DataField>
+        <Field Name="DateCheckOut">
+          <DataField>DateCheckOut</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="tongtien">
-          <DataField>tongtien</DataField>
+        <Field Name="Total">
+          <DataField>Total</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>QLKSCDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Study\C#\QuanLyKhachSan\QuanLyKhachSan\QLKSCDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>G:\DoAN\QLKS\QuanLyKhachSan\QuanLyKhachSan\QLKSCDataSet.xsd</rd:SchemaPath>
         <rd:TableName>gethoadon</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

@@ -15,7 +15,14 @@ namespace QuanLyKhachSan.BLL
 
         public DataTable dsdp()
         {
-            string sql = "Select * From Booking";
+            string sql = @"Select IdBooking,IdEmployee,IdCustomer,RoomName,
+                        Convert(nvarchar(20), DateBook, 111) as DateBook,
+                        Convert(nvarchar(20), DateCheckIn, 111) as DateCheckIn,
+                        Convert(nvarchar(20), DateCheckOut, 111) as DateCheckOut,
+                        MoneyDeposit,
+                        Quantity,
+                        status
+                        From Booking";
             return db.getDS(sql);
         }
 

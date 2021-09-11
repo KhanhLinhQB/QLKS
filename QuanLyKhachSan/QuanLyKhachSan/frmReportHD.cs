@@ -31,7 +31,12 @@ namespace QuanLyKhachSan
 
         private DataTable getdata(string madp)
         {
-            string sql = "select hd.mahd,hd.ngaylap,dp.madp,dp.makh,kh.hoten,dp.tenlp,dp.soluong,dp.ngayden,dp.ngaydi,hd.tongtien from hoadon as hd,datphong as dp,khachhang as kh where hd.madp=dp.madp and dp.makh = kh.makh and hd.madp = '" + madp + "'";
+            string sql = @"select bi.IdBill,bi.DateBilling,bk.IdBooking,bk.IdCustomer,
+                        cus.NameCustomer,bk.RoomName,bk.Quantity,
+	                    bk.DateCheckIn,bk.DateCheckOut,bi.Total
+                        from Bill as bi,Booking as bk,Customer as cus
+                        where bi.IdBooking = bk.IdBooking and bk.IdCustomer = cus.IdCustomer
+                        and bi.IdBooking = '" + madp + "'";
             DataTable dtb = db.getDS(sql);
             return dtb;
         }
