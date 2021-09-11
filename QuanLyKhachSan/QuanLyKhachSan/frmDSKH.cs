@@ -13,7 +13,7 @@ namespace QuanLyKhachSan
         }
         private DataTable getdata()
         {
-            string sql = "select * from khachhang";
+            string sql = "select * from Customer";
             DataTable dtb = db.getDS(sql);
             return dtb;
         }

@@ -269,14 +269,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="makh">
+                    <Textbox Name="Textbox6">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!makh.Value</Value>
+                              <Value>=Fields!IdCustomer.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -288,7 +288,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>makh</rd:DefaultName>
+                      <rd:DefaultName>Textbox6</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>#e5e5e5</Color>
@@ -312,7 +312,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!hoten.Value</Value>
+                              <Value>=Fields!NameCustomer.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -348,7 +348,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!cmnd.Value</Value>
+                              <Value>=Fields!IdCardCustomer.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -384,7 +384,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!sdt.Value</Value>
+                              <Value>=Fields!PhoneNumber.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -420,7 +420,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!email.Value</Value>
+                              <Value>=Fields!EmailCustomer.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -449,14 +449,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="diachi">
+                    <Textbox Name="Textbox24">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!diachi.Value</Value>
+                              <Value>=Fields!AddressCustomer.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -468,7 +468,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>diachi</rd:DefaultName>
+                      <rd:DefaultName>Textbox24</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>#e5e5e5</Color>
@@ -519,7 +519,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2in</Height>
+    <Height>1.98958in</Height>
     <Style />
   </Body>
   <Width>14.15104in</Width>
@@ -603,34 +603,34 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="makh">
-          <DataField>makh</DataField>
+        <Field Name="IdCustomer">
+          <DataField>IdCustomer</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="hoten">
-          <DataField>hoten</DataField>
+        <Field Name="NameCustomer">
+          <DataField>NameCustomer</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="cmnd">
-          <DataField>cmnd</DataField>
+        <Field Name="IdCardCustomer">
+          <DataField>IdCardCustomer</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="sdt">
-          <DataField>sdt</DataField>
+        <Field Name="PhoneNumber">
+          <DataField>PhoneNumber</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="email">
-          <DataField>email</DataField>
+        <Field Name="EmailCustomer">
+          <DataField>EmailCustomer</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="diachi">
-          <DataField>diachi</DataField>
+        <Field Name="AddressCustomer">
+          <DataField>AddressCustomer</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>QLKSCDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Study\C#\QuanLyKhachSan\QuanLyKhachSan\QLKSCDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>G:\DoAN\QLKS\QuanLyKhachSan\QuanLyKhachSan\QLKSCDataSet.xsd</rd:SchemaPath>
         <rd:TableName>getdskh</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

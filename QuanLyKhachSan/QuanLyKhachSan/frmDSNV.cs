@@ -22,7 +22,9 @@ namespace QuanLyKhachSan
         }
         private DataTable getdata()
         {
-            string sql = "select manv,tencv,hoten,ngaysinh,gioitinh,sdt,cmnd,diachi,email from nhanvien,chucvu where nhanvien.macv = chucvu.macv";
+            string sql = @"select IdEmployee,NamePosition,NameEmployee,DateOfBirth,GenderEmployee,PhoneNumber,IdCardEmployee,AddressEmployee,EmailEmployee
+                        from Employee, Position
+                        where Employee.IdPosition = Position.IdPosition";
             DataTable dtb = db.getDS(sql);
             return dtb;
         }

@@ -402,7 +402,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!manv.Value</Value>
+                              <Value>=Fields!IdEmployee.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -438,7 +438,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!tencv.Value</Value>
+                              <Value>=Fields!NamePosition.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -474,7 +474,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!hoten.Value</Value>
+                              <Value>=Fields!NameEmployee.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -510,7 +510,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ngaysinh.Value</Value>
+                              <Value>=Fields!DateOfBirth.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Format>d</Format>
@@ -547,7 +547,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!gioitinh.Value</Value>
+                              <Value>=Fields!GenderEmployee.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -583,7 +583,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!sdt.Value</Value>
+                              <Value>=Fields!PhoneNumber.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -619,7 +619,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!cmnd.Value</Value>
+                              <Value>=Fields!IdCardEmployee.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -655,7 +655,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!diachi.Value</Value>
+                              <Value>=Fields!AddressEmployee.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -691,7 +691,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!email.Value</Value>
+                              <Value>=Fields!EmailEmployee.Value</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <Color>#4d4d4d</Color>
@@ -840,46 +840,46 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="manv">
-          <DataField>manv</DataField>
+        <Field Name="IdEmployee">
+          <DataField>IdEmployee</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="tencv">
-          <DataField>tencv</DataField>
+        <Field Name="NamePosition">
+          <DataField>NamePosition</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="hoten">
-          <DataField>hoten</DataField>
+        <Field Name="NameEmployee">
+          <DataField>NameEmployee</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ngaysinh">
-          <DataField>ngaysinh</DataField>
+        <Field Name="DateOfBirth">
+          <DataField>DateOfBirth</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="gioitinh">
-          <DataField>gioitinh</DataField>
+        <Field Name="GenderEmployee">
+          <DataField>GenderEmployee</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="sdt">
-          <DataField>sdt</DataField>
+        <Field Name="PhoneNumber">
+          <DataField>PhoneNumber</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="cmnd">
-          <DataField>cmnd</DataField>
+        <Field Name="IdCardEmployee">
+          <DataField>IdCardEmployee</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="diachi">
-          <DataField>diachi</DataField>
+        <Field Name="AddressEmployee">
+          <DataField>AddressEmployee</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="email">
-          <DataField>email</DataField>
+        <Field Name="EmailEmployee">
+          <DataField>EmailEmployee</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>QLKSCDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\Study\C#\QuanLyKhachSan\QuanLyKhachSan\QLKSCDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>G:\DoAN\QLKS\QuanLyKhachSan\QuanLyKhachSan\QLKSCDataSet.xsd</rd:SchemaPath>
         <rd:TableName>getdsnv</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

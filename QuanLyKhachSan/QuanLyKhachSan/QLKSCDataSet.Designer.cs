@@ -737,23 +737,23 @@ namespace QuanLyKhachSan {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class getdsnvDataTable : global::System.Data.TypedTableBase<getdsnvRow> {
             
-            private global::System.Data.DataColumn columnmanv;
+            private global::System.Data.DataColumn columnIdEmployee;
             
-            private global::System.Data.DataColumn columntencv;
+            private global::System.Data.DataColumn columnNamePosition;
             
-            private global::System.Data.DataColumn columnhoten;
+            private global::System.Data.DataColumn columnNameEmployee;
             
-            private global::System.Data.DataColumn columnngaysinh;
+            private global::System.Data.DataColumn columnDateOfBirth;
             
-            private global::System.Data.DataColumn columngioitinh;
+            private global::System.Data.DataColumn columnGenderEmployee;
             
-            private global::System.Data.DataColumn columnsdt;
+            private global::System.Data.DataColumn columnPhoneNumber;
             
-            private global::System.Data.DataColumn columncmnd;
+            private global::System.Data.DataColumn columnIdCardEmployee;
             
-            private global::System.Data.DataColumn columndiachi;
+            private global::System.Data.DataColumn columnAddressEmployee;
             
-            private global::System.Data.DataColumn columnemail;
+            private global::System.Data.DataColumn columnEmailEmployee;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -790,73 +790,73 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn manvColumn {
+            public global::System.Data.DataColumn IdEmployeeColumn {
                 get {
-                    return this.columnmanv;
+                    return this.columnIdEmployee;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn tencvColumn {
+            public global::System.Data.DataColumn NamePositionColumn {
                 get {
-                    return this.columntencv;
+                    return this.columnNamePosition;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn hotenColumn {
+            public global::System.Data.DataColumn NameEmployeeColumn {
                 get {
-                    return this.columnhoten;
+                    return this.columnNameEmployee;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ngaysinhColumn {
+            public global::System.Data.DataColumn DateOfBirthColumn {
                 get {
-                    return this.columnngaysinh;
+                    return this.columnDateOfBirth;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn gioitinhColumn {
+            public global::System.Data.DataColumn GenderEmployeeColumn {
                 get {
-                    return this.columngioitinh;
+                    return this.columnGenderEmployee;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn sdtColumn {
+            public global::System.Data.DataColumn PhoneNumberColumn {
                 get {
-                    return this.columnsdt;
+                    return this.columnPhoneNumber;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn cmndColumn {
+            public global::System.Data.DataColumn IdCardEmployeeColumn {
                 get {
-                    return this.columncmnd;
+                    return this.columnIdCardEmployee;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn diachiColumn {
+            public global::System.Data.DataColumn AddressEmployeeColumn {
                 get {
-                    return this.columndiachi;
+                    return this.columnAddressEmployee;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn emailColumn {
+            public global::System.Data.DataColumn EmailEmployeeColumn {
                 get {
-                    return this.columnemail;
+                    return this.columnEmailEmployee;
                 }
             }
             
@@ -897,18 +897,18 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public getdsnvRow AddgetdsnvRow(string manv, string tencv, string hoten, System.DateTime ngaysinh, string gioitinh, string sdt, string cmnd, string diachi, string email) {
+            public getdsnvRow AddgetdsnvRow(string IdEmployee, string NamePosition, string NameEmployee, System.DateTime DateOfBirth, string GenderEmployee, string PhoneNumber, string IdCardEmployee, string AddressEmployee, string EmailEmployee) {
                 getdsnvRow rowgetdsnvRow = ((getdsnvRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        manv,
-                        tencv,
-                        hoten,
-                        ngaysinh,
-                        gioitinh,
-                        sdt,
-                        cmnd,
-                        diachi,
-                        email};
+                        IdEmployee,
+                        NamePosition,
+                        NameEmployee,
+                        DateOfBirth,
+                        GenderEmployee,
+                        PhoneNumber,
+                        IdCardEmployee,
+                        AddressEmployee,
+                        EmailEmployee};
                 rowgetdsnvRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowgetdsnvRow);
                 return rowgetdsnvRow;
@@ -916,9 +916,9 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public getdsnvRow FindBymanv(string manv) {
+            public getdsnvRow FindByIdEmployee(string IdEmployee) {
                 return ((getdsnvRow)(this.Rows.Find(new object[] {
-                            manv})));
+                            IdEmployee})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -938,57 +938,57 @@ namespace QuanLyKhachSan {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnmanv = base.Columns["manv"];
-                this.columntencv = base.Columns["tencv"];
-                this.columnhoten = base.Columns["hoten"];
-                this.columnngaysinh = base.Columns["ngaysinh"];
-                this.columngioitinh = base.Columns["gioitinh"];
-                this.columnsdt = base.Columns["sdt"];
-                this.columncmnd = base.Columns["cmnd"];
-                this.columndiachi = base.Columns["diachi"];
-                this.columnemail = base.Columns["email"];
+                this.columnIdEmployee = base.Columns["IdEmployee"];
+                this.columnNamePosition = base.Columns["NamePosition"];
+                this.columnNameEmployee = base.Columns["NameEmployee"];
+                this.columnDateOfBirth = base.Columns["DateOfBirth"];
+                this.columnGenderEmployee = base.Columns["GenderEmployee"];
+                this.columnPhoneNumber = base.Columns["PhoneNumber"];
+                this.columnIdCardEmployee = base.Columns["IdCardEmployee"];
+                this.columnAddressEmployee = base.Columns["AddressEmployee"];
+                this.columnEmailEmployee = base.Columns["EmailEmployee"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnmanv = new global::System.Data.DataColumn("manv", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmanv);
-                this.columntencv = new global::System.Data.DataColumn("tencv", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntencv);
-                this.columnhoten = new global::System.Data.DataColumn("hoten", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnhoten);
-                this.columnngaysinh = new global::System.Data.DataColumn("ngaysinh", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnngaysinh);
-                this.columngioitinh = new global::System.Data.DataColumn("gioitinh", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columngioitinh);
-                this.columnsdt = new global::System.Data.DataColumn("sdt", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsdt);
-                this.columncmnd = new global::System.Data.DataColumn("cmnd", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncmnd);
-                this.columndiachi = new global::System.Data.DataColumn("diachi", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndiachi);
-                this.columnemail = new global::System.Data.DataColumn("email", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnemail);
+                this.columnIdEmployee = new global::System.Data.DataColumn("IdEmployee", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdEmployee);
+                this.columnNamePosition = new global::System.Data.DataColumn("NamePosition", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNamePosition);
+                this.columnNameEmployee = new global::System.Data.DataColumn("NameEmployee", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNameEmployee);
+                this.columnDateOfBirth = new global::System.Data.DataColumn("DateOfBirth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDateOfBirth);
+                this.columnGenderEmployee = new global::System.Data.DataColumn("GenderEmployee", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGenderEmployee);
+                this.columnPhoneNumber = new global::System.Data.DataColumn("PhoneNumber", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhoneNumber);
+                this.columnIdCardEmployee = new global::System.Data.DataColumn("IdCardEmployee", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdCardEmployee);
+                this.columnAddressEmployee = new global::System.Data.DataColumn("AddressEmployee", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAddressEmployee);
+                this.columnEmailEmployee = new global::System.Data.DataColumn("EmailEmployee", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmailEmployee);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnmanv}, true));
-                this.columnmanv.AllowDBNull = false;
-                this.columnmanv.Unique = true;
-                this.columnmanv.MaxLength = 5;
-                this.columntencv.AllowDBNull = false;
-                this.columntencv.MaxLength = 30;
-                this.columnhoten.AllowDBNull = false;
-                this.columnhoten.MaxLength = 30;
-                this.columnngaysinh.AllowDBNull = false;
-                this.columngioitinh.AllowDBNull = false;
-                this.columngioitinh.MaxLength = 3;
-                this.columnsdt.AllowDBNull = false;
-                this.columnsdt.MaxLength = 12;
-                this.columncmnd.AllowDBNull = false;
-                this.columncmnd.MaxLength = 9;
-                this.columndiachi.AllowDBNull = false;
-                this.columndiachi.MaxLength = 50;
-                this.columnemail.MaxLength = 30;
+                                this.columnIdEmployee}, true));
+                this.columnIdEmployee.AllowDBNull = false;
+                this.columnIdEmployee.Unique = true;
+                this.columnIdEmployee.MaxLength = 5;
+                this.columnNamePosition.AllowDBNull = false;
+                this.columnNamePosition.MaxLength = 30;
+                this.columnNameEmployee.AllowDBNull = false;
+                this.columnNameEmployee.MaxLength = 50;
+                this.columnDateOfBirth.AllowDBNull = false;
+                this.columnGenderEmployee.AllowDBNull = false;
+                this.columnGenderEmployee.MaxLength = 3;
+                this.columnPhoneNumber.AllowDBNull = false;
+                this.columnPhoneNumber.MaxLength = 10;
+                this.columnIdCardEmployee.AllowDBNull = false;
+                this.columnIdCardEmployee.MaxLength = 12;
+                this.columnAddressEmployee.AllowDBNull = false;
+                this.columnAddressEmployee.MaxLength = 50;
+                this.columnEmailEmployee.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1122,17 +1122,17 @@ namespace QuanLyKhachSan {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class getdskhDataTable : global::System.Data.TypedTableBase<getdskhRow> {
             
-            private global::System.Data.DataColumn columnmakh;
+            private global::System.Data.DataColumn columnIdCustomer;
             
-            private global::System.Data.DataColumn columnhoten;
+            private global::System.Data.DataColumn columnNameCustomer;
             
-            private global::System.Data.DataColumn columncmnd;
+            private global::System.Data.DataColumn columnIdCardCustomer;
             
-            private global::System.Data.DataColumn columnsdt;
+            private global::System.Data.DataColumn columnPhoneNumber;
             
-            private global::System.Data.DataColumn columnemail;
+            private global::System.Data.DataColumn columnEmailCustomer;
             
-            private global::System.Data.DataColumn columndiachi;
+            private global::System.Data.DataColumn columnAddressCustomer;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -1169,49 +1169,49 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn makhColumn {
+            public global::System.Data.DataColumn IdCustomerColumn {
                 get {
-                    return this.columnmakh;
+                    return this.columnIdCustomer;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn hotenColumn {
+            public global::System.Data.DataColumn NameCustomerColumn {
                 get {
-                    return this.columnhoten;
+                    return this.columnNameCustomer;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn cmndColumn {
+            public global::System.Data.DataColumn IdCardCustomerColumn {
                 get {
-                    return this.columncmnd;
+                    return this.columnIdCardCustomer;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn sdtColumn {
+            public global::System.Data.DataColumn PhoneNumberColumn {
                 get {
-                    return this.columnsdt;
+                    return this.columnPhoneNumber;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn emailColumn {
+            public global::System.Data.DataColumn EmailCustomerColumn {
                 get {
-                    return this.columnemail;
+                    return this.columnEmailCustomer;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn diachiColumn {
+            public global::System.Data.DataColumn AddressCustomerColumn {
                 get {
-                    return this.columndiachi;
+                    return this.columnAddressCustomer;
                 }
             }
             
@@ -1252,15 +1252,15 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public getdskhRow AddgetdskhRow(string makh, string hoten, string cmnd, string sdt, string email, string diachi) {
+            public getdskhRow AddgetdskhRow(string IdCustomer, string NameCustomer, string IdCardCustomer, string PhoneNumber, string EmailCustomer, string AddressCustomer) {
                 getdskhRow rowgetdskhRow = ((getdskhRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        makh,
-                        hoten,
-                        cmnd,
-                        sdt,
-                        email,
-                        diachi};
+                        IdCustomer,
+                        NameCustomer,
+                        IdCardCustomer,
+                        PhoneNumber,
+                        EmailCustomer,
+                        AddressCustomer};
                 rowgetdskhRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowgetdskhRow);
                 return rowgetdskhRow;
@@ -1268,9 +1268,9 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public getdskhRow FindBymakh(string makh) {
+            public getdskhRow FindByIdCustomer(string IdCustomer) {
                 return ((getdskhRow)(this.Rows.Find(new object[] {
-                            makh})));
+                            IdCustomer})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1290,43 +1290,43 @@ namespace QuanLyKhachSan {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnmakh = base.Columns["makh"];
-                this.columnhoten = base.Columns["hoten"];
-                this.columncmnd = base.Columns["cmnd"];
-                this.columnsdt = base.Columns["sdt"];
-                this.columnemail = base.Columns["email"];
-                this.columndiachi = base.Columns["diachi"];
+                this.columnIdCustomer = base.Columns["IdCustomer"];
+                this.columnNameCustomer = base.Columns["NameCustomer"];
+                this.columnIdCardCustomer = base.Columns["IdCardCustomer"];
+                this.columnPhoneNumber = base.Columns["PhoneNumber"];
+                this.columnEmailCustomer = base.Columns["EmailCustomer"];
+                this.columnAddressCustomer = base.Columns["AddressCustomer"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnmakh = new global::System.Data.DataColumn("makh", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmakh);
-                this.columnhoten = new global::System.Data.DataColumn("hoten", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnhoten);
-                this.columncmnd = new global::System.Data.DataColumn("cmnd", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncmnd);
-                this.columnsdt = new global::System.Data.DataColumn("sdt", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsdt);
-                this.columnemail = new global::System.Data.DataColumn("email", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnemail);
-                this.columndiachi = new global::System.Data.DataColumn("diachi", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndiachi);
+                this.columnIdCustomer = new global::System.Data.DataColumn("IdCustomer", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdCustomer);
+                this.columnNameCustomer = new global::System.Data.DataColumn("NameCustomer", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNameCustomer);
+                this.columnIdCardCustomer = new global::System.Data.DataColumn("IdCardCustomer", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdCardCustomer);
+                this.columnPhoneNumber = new global::System.Data.DataColumn("PhoneNumber", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhoneNumber);
+                this.columnEmailCustomer = new global::System.Data.DataColumn("EmailCustomer", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmailCustomer);
+                this.columnAddressCustomer = new global::System.Data.DataColumn("AddressCustomer", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAddressCustomer);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnmakh}, true));
-                this.columnmakh.AllowDBNull = false;
-                this.columnmakh.Unique = true;
-                this.columnmakh.MaxLength = 5;
-                this.columnhoten.AllowDBNull = false;
-                this.columnhoten.MaxLength = 30;
-                this.columncmnd.AllowDBNull = false;
-                this.columncmnd.MaxLength = 9;
-                this.columnsdt.AllowDBNull = false;
-                this.columnsdt.MaxLength = 12;
-                this.columnemail.MaxLength = 30;
-                this.columndiachi.AllowDBNull = false;
-                this.columndiachi.MaxLength = 50;
+                                this.columnIdCustomer}, true));
+                this.columnIdCustomer.AllowDBNull = false;
+                this.columnIdCustomer.Unique = true;
+                this.columnIdCustomer.MaxLength = 5;
+                this.columnNameCustomer.AllowDBNull = false;
+                this.columnNameCustomer.MaxLength = 50;
+                this.columnIdCardCustomer.AllowDBNull = false;
+                this.columnIdCardCustomer.MaxLength = 12;
+                this.columnPhoneNumber.AllowDBNull = false;
+                this.columnPhoneNumber.MaxLength = 10;
+                this.columnEmailCustomer.MaxLength = 30;
+                this.columnAddressCustomer.AllowDBNull = false;
+                this.columnAddressCustomer.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1594,118 +1594,118 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string manv {
+            public string IdEmployee {
                 get {
-                    return ((string)(this[this.tablegetdsnv.manvColumn]));
+                    return ((string)(this[this.tablegetdsnv.IdEmployeeColumn]));
                 }
                 set {
-                    this[this.tablegetdsnv.manvColumn] = value;
+                    this[this.tablegetdsnv.IdEmployeeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string tencv {
+            public string NamePosition {
                 get {
-                    return ((string)(this[this.tablegetdsnv.tencvColumn]));
+                    return ((string)(this[this.tablegetdsnv.NamePositionColumn]));
                 }
                 set {
-                    this[this.tablegetdsnv.tencvColumn] = value;
+                    this[this.tablegetdsnv.NamePositionColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string hoten {
+            public string NameEmployee {
                 get {
-                    return ((string)(this[this.tablegetdsnv.hotenColumn]));
+                    return ((string)(this[this.tablegetdsnv.NameEmployeeColumn]));
                 }
                 set {
-                    this[this.tablegetdsnv.hotenColumn] = value;
+                    this[this.tablegetdsnv.NameEmployeeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime ngaysinh {
+            public System.DateTime DateOfBirth {
                 get {
-                    return ((global::System.DateTime)(this[this.tablegetdsnv.ngaysinhColumn]));
+                    return ((global::System.DateTime)(this[this.tablegetdsnv.DateOfBirthColumn]));
                 }
                 set {
-                    this[this.tablegetdsnv.ngaysinhColumn] = value;
+                    this[this.tablegetdsnv.DateOfBirthColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string gioitinh {
+            public string GenderEmployee {
                 get {
-                    return ((string)(this[this.tablegetdsnv.gioitinhColumn]));
+                    return ((string)(this[this.tablegetdsnv.GenderEmployeeColumn]));
                 }
                 set {
-                    this[this.tablegetdsnv.gioitinhColumn] = value;
+                    this[this.tablegetdsnv.GenderEmployeeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string sdt {
+            public string PhoneNumber {
                 get {
-                    return ((string)(this[this.tablegetdsnv.sdtColumn]));
+                    return ((string)(this[this.tablegetdsnv.PhoneNumberColumn]));
                 }
                 set {
-                    this[this.tablegetdsnv.sdtColumn] = value;
+                    this[this.tablegetdsnv.PhoneNumberColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string cmnd {
+            public string IdCardEmployee {
                 get {
-                    return ((string)(this[this.tablegetdsnv.cmndColumn]));
+                    return ((string)(this[this.tablegetdsnv.IdCardEmployeeColumn]));
                 }
                 set {
-                    this[this.tablegetdsnv.cmndColumn] = value;
+                    this[this.tablegetdsnv.IdCardEmployeeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string diachi {
+            public string AddressEmployee {
                 get {
-                    return ((string)(this[this.tablegetdsnv.diachiColumn]));
+                    return ((string)(this[this.tablegetdsnv.AddressEmployeeColumn]));
                 }
                 set {
-                    this[this.tablegetdsnv.diachiColumn] = value;
+                    this[this.tablegetdsnv.AddressEmployeeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string email {
+            public string EmailEmployee {
                 get {
                     try {
-                        return ((string)(this[this.tablegetdsnv.emailColumn]));
+                        return ((string)(this[this.tablegetdsnv.EmailEmployeeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'email\' in table \'getdsnv\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'EmailEmployee\' in table \'getdsnv\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablegetdsnv.emailColumn] = value;
+                    this[this.tablegetdsnv.EmailEmployeeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsemailNull() {
-                return this.IsNull(this.tablegetdsnv.emailColumn);
+            public bool IsEmailEmployeeNull() {
+                return this.IsNull(this.tablegetdsnv.EmailEmployeeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetemailNull() {
-                this[this.tablegetdsnv.emailColumn] = global::System.Convert.DBNull;
+            public void SetEmailEmployeeNull() {
+                this[this.tablegetdsnv.EmailEmployeeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1725,85 +1725,85 @@ namespace QuanLyKhachSan {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string makh {
+            public string IdCustomer {
                 get {
-                    return ((string)(this[this.tablegetdskh.makhColumn]));
+                    return ((string)(this[this.tablegetdskh.IdCustomerColumn]));
                 }
                 set {
-                    this[this.tablegetdskh.makhColumn] = value;
+                    this[this.tablegetdskh.IdCustomerColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string hoten {
+            public string NameCustomer {
                 get {
-                    return ((string)(this[this.tablegetdskh.hotenColumn]));
+                    return ((string)(this[this.tablegetdskh.NameCustomerColumn]));
                 }
                 set {
-                    this[this.tablegetdskh.hotenColumn] = value;
+                    this[this.tablegetdskh.NameCustomerColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string cmnd {
+            public string IdCardCustomer {
                 get {
-                    return ((string)(this[this.tablegetdskh.cmndColumn]));
+                    return ((string)(this[this.tablegetdskh.IdCardCustomerColumn]));
                 }
                 set {
-                    this[this.tablegetdskh.cmndColumn] = value;
+                    this[this.tablegetdskh.IdCardCustomerColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string sdt {
+            public string PhoneNumber {
                 get {
-                    return ((string)(this[this.tablegetdskh.sdtColumn]));
+                    return ((string)(this[this.tablegetdskh.PhoneNumberColumn]));
                 }
                 set {
-                    this[this.tablegetdskh.sdtColumn] = value;
+                    this[this.tablegetdskh.PhoneNumberColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string email {
+            public string EmailCustomer {
                 get {
                     try {
-                        return ((string)(this[this.tablegetdskh.emailColumn]));
+                        return ((string)(this[this.tablegetdskh.EmailCustomerColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'email\' in table \'getdskh\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'EmailCustomer\' in table \'getdskh\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablegetdskh.emailColumn] = value;
+                    this[this.tablegetdskh.EmailCustomerColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string diachi {
+            public string AddressCustomer {
                 get {
-                    return ((string)(this[this.tablegetdskh.diachiColumn]));
+                    return ((string)(this[this.tablegetdskh.AddressCustomerColumn]));
                 }
                 set {
-                    this[this.tablegetdskh.diachiColumn] = value;
+                    this[this.tablegetdskh.AddressCustomerColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsemailNull() {
-                return this.IsNull(this.tablegetdskh.emailColumn);
+            public bool IsEmailCustomerNull() {
+                return this.IsNull(this.tablegetdskh.EmailCustomerColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetemailNull() {
-                this[this.tablegetdskh.emailColumn] = global::System.Convert.DBNull;
+            public void SetEmailCustomerNull() {
+                this[this.tablegetdskh.EmailCustomerColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2224,15 +2224,15 @@ namespace QuanLyKhachSan.QLKSCDataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "getdsnv";
-            tableMapping.ColumnMappings.Add("manv", "manv");
-            tableMapping.ColumnMappings.Add("tencv", "tencv");
-            tableMapping.ColumnMappings.Add("hoten", "hoten");
-            tableMapping.ColumnMappings.Add("ngaysinh", "ngaysinh");
-            tableMapping.ColumnMappings.Add("gioitinh", "gioitinh");
-            tableMapping.ColumnMappings.Add("sdt", "sdt");
-            tableMapping.ColumnMappings.Add("cmnd", "cmnd");
-            tableMapping.ColumnMappings.Add("diachi", "diachi");
-            tableMapping.ColumnMappings.Add("email", "email");
+            tableMapping.ColumnMappings.Add("IdEmployee", "IdEmployee");
+            tableMapping.ColumnMappings.Add("NamePosition", "NamePosition");
+            tableMapping.ColumnMappings.Add("NameEmployee", "NameEmployee");
+            tableMapping.ColumnMappings.Add("DateOfBirth", "DateOfBirth");
+            tableMapping.ColumnMappings.Add("GenderEmployee", "GenderEmployee");
+            tableMapping.ColumnMappings.Add("PhoneNumber", "PhoneNumber");
+            tableMapping.ColumnMappings.Add("IdCardEmployee", "IdCardEmployee");
+            tableMapping.ColumnMappings.Add("AddressEmployee", "AddressEmployee");
+            tableMapping.ColumnMappings.Add("EmailEmployee", "EmailEmployee");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -2249,7 +2249,7 @@ namespace QuanLyKhachSan.QLKSCDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.getdsnv";
+            this._commandCollection[0].CommandText = "dbo.getemloyee";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -2400,12 +2400,12 @@ namespace QuanLyKhachSan.QLKSCDataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "getdskh";
-            tableMapping.ColumnMappings.Add("makh", "makh");
-            tableMapping.ColumnMappings.Add("hoten", "hoten");
-            tableMapping.ColumnMappings.Add("cmnd", "cmnd");
-            tableMapping.ColumnMappings.Add("sdt", "sdt");
-            tableMapping.ColumnMappings.Add("email", "email");
-            tableMapping.ColumnMappings.Add("diachi", "diachi");
+            tableMapping.ColumnMappings.Add("IdCustomer", "IdCustomer");
+            tableMapping.ColumnMappings.Add("NameCustomer", "NameCustomer");
+            tableMapping.ColumnMappings.Add("IdCardCustomer", "IdCardCustomer");
+            tableMapping.ColumnMappings.Add("PhoneNumber", "PhoneNumber");
+            tableMapping.ColumnMappings.Add("EmailCustomer", "EmailCustomer");
+            tableMapping.ColumnMappings.Add("AddressCustomer", "AddressCustomer");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -2422,7 +2422,7 @@ namespace QuanLyKhachSan.QLKSCDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.getdskh";
+            this._commandCollection[0].CommandText = "dbo.getcustomer";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
