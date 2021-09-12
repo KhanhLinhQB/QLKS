@@ -77,7 +77,6 @@
             this.nbiDatphong = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiThongtinKH = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiQuanlyphong = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarGroup_TienIch = new DevExpress.XtraNavBar.NavBarGroup();
             this.nbiCalendar = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiCalculator = new DevExpress.XtraNavBar.NavBarItem();
             this.xtraTabControl = new DevExpress.XtraTab.XtraTabControl();
@@ -135,7 +134,7 @@
             this.repositoryItemTimeEdit1});
             this.RibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.RibbonControl.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.False;
-            this.RibbonControl.Size = new System.Drawing.Size(978, 165);
+            this.RibbonControl.Size = new System.Drawing.Size(984, 115);
             this.RibbonControl.StatusBar = this.ribbonStatusBar1;
             this.RibbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
@@ -324,7 +323,7 @@
             // 
             // barHeaderItem1
             // 
-            this.barHeaderItem1.Caption = "Quản lý khách sạn. Nguyễn Văn Đồng - Hà Đức Phong";
+            this.barHeaderItem1.Caption = "Quản lý khách sạn. Hotel Management\r\n";
             this.barHeaderItem1.Id = 33;
             this.barHeaderItem1.Name = "barHeaderItem1";
             // 
@@ -439,19 +438,18 @@
             this.ribbonStatusBar1.ItemLinks.Add(this.barHeaderItem1);
             this.ribbonStatusBar1.ItemLinks.Add(this.time);
             this.ribbonStatusBar1.ItemLinks.Add(this.bandango);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 604);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 614);
             this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.RibbonControl;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(978, 40);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(984, 30);
             // 
             // navBarControl
             // 
             this.navBarControl.ActiveGroup = this.navBarGroup_TacVuChinh;
             this.navBarControl.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarControl.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
-            this.navBarGroup_TacVuChinh,
-            this.navBarGroup_TienIch});
+            this.navBarGroup_TacVuChinh});
             this.navBarControl.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.nbiThemkh,
             this.nbiDatphong,
@@ -459,11 +457,11 @@
             this.nbiCalendar,
             this.nbiCalculator,
             this.nbiQuanlyphong});
-            this.navBarControl.Location = new System.Drawing.Point(0, 165);
+            this.navBarControl.Location = new System.Drawing.Point(0, 115);
             this.navBarControl.Margin = new System.Windows.Forms.Padding(4);
             this.navBarControl.Name = "navBarControl";
             this.navBarControl.OptionsNavPane.ExpandedWidth = 187;
-            this.navBarControl.Size = new System.Drawing.Size(187, 439);
+            this.navBarControl.Size = new System.Drawing.Size(187, 499);
             this.navBarControl.TabIndex = 2;
             this.navBarControl.Text = "navBarControl1";
             // 
@@ -502,15 +500,6 @@
             this.nbiQuanlyphong.Name = "nbiQuanlyphong";
             this.nbiQuanlyphong.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiThongtinphong_LinkClicked);
             // 
-            // navBarGroup_TienIch
-            // 
-            this.navBarGroup_TienIch.Caption = "Tiện ích";
-            this.navBarGroup_TienIch.Expanded = true;
-            this.navBarGroup_TienIch.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiCalendar),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiCalculator)});
-            this.navBarGroup_TienIch.Name = "navBarGroup_TienIch";
-            // 
             // nbiCalendar
             // 
             this.nbiCalendar.Caption = "Calendar";
@@ -525,10 +514,10 @@
             // 
             this.xtraTabControl.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
             this.xtraTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl.Location = new System.Drawing.Point(187, 165);
+            this.xtraTabControl.Location = new System.Drawing.Point(187, 115);
             this.xtraTabControl.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabControl.Name = "xtraTabControl";
-            this.xtraTabControl.Size = new System.Drawing.Size(791, 439);
+            this.xtraTabControl.Size = new System.Drawing.Size(797, 499);
             this.xtraTabControl.TabIndex = 3;
             this.xtraTabControl.SelectedPageChanged += new DevExpress.XtraTab.TabPageChangedEventHandler(this.xtraTabControl_SelectedPageChanged);
             this.xtraTabControl.CloseButtonClick += new System.EventHandler(this.xtraTabControl_CloseButtonClick);
@@ -546,9 +535,9 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 644);
+            this.ClientSize = new System.Drawing.Size(984, 644);
             this.Controls.Add(this.xtraTabControl);
             this.Controls.Add(this.navBarControl);
             this.Controls.Add(this.ribbonStatusBar1);
@@ -603,7 +592,6 @@
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup_TacVuChinh;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl;
         private DevExpress.XtraBars.Ribbon.RibbonPage rbpAbout;
-        private DevExpress.XtraNavBar.NavBarGroup navBarGroup_TienIch;
         private DevExpress.XtraNavBar.NavBarItem nbiThemkh;
         private DevExpress.XtraNavBar.NavBarItem nbiDatphong;
         private DevExpress.XtraNavBar.NavBarItem nbiThongtinKH;
