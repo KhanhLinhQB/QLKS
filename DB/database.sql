@@ -1,6 +1,6 @@
-﻿create database QLKSC
+﻿create database QLKSCN
 go
-use QLKSC
+use QLKSCN
 go
 
 --Table Position
@@ -27,11 +27,11 @@ create table Employee(
 	IdPosition char(2) foreign key references Position(IdPosition) not null,
 	NameEmployee nvarchar(50) not null,
 	DateOfBirth date check(DateOfBirth < getdate()) not null,
-	GenderEmployee nvarchar(3) check(GenderEmployee in(N'Nam',N'Nữ')) not null,
-	PhoneNumber varchar(10) check(PhoneNumber like '[0-0][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]' or PhoneNumber like '[0-0][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]') not null,
-	IdCardEmployee char(12) check(IdCardEmployee like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]') unique not null,
+	GenderEmployee nvarchar(3)  not null,
+	PhoneNumber varchar(10)   not null,
+	IdCardEmployee char(12)   not null,
 	AddressEmployee nvarchar(50) not null,
-	EmailEmployee varchar(30) unique check(EmailEmployee  like '[a-z]%@[a-z]%.[a-z]%')
+	EmailEmployee varchar(30) unique 
 )
 go
 insert into Employee values('NV001','GD',N'Trần Khánh Linh',convert(date,'05/12/1992',105),N'Nữ','0981722672','015071000030',N'Hồ Chí Minh','linhtran@gmail.com')
@@ -113,9 +113,9 @@ go
 create table Customer(
 	IdCustomer char(5) primary key,
 	NameCustomer nvarchar(50) not null,
-	IdCardCustomer char(12) check(IdCardCustomer like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]') unique not null,
-	PhoneNumber varchar(10) check(PhoneNumber like '[0-0][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]' or PhoneNumber like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]') not null,
-	EmailCustomer varchar(30) unique check(EmailCustomer  like '[a-z]%@[a-z]%.[a-z]%'),
+	IdCardCustomer char(12) not null,
+	PhoneNumber varchar(10) not null,
+	EmailCustomer varchar(30) unique,
 	AddressCustomer nvarchar(50) not null
 )
 go
@@ -158,8 +158,8 @@ create table Booking(
 go
 insert into Booking values('DP001','NV002','KH001','Superio',getdate(),convert(date,'08/01/2021',105),convert(date,'08/02/2021',105),100000,2,0)
 insert into Booking values('DP002','NV002','KH002','Standard',getdate(),convert(date,'01/03/2021',105),convert(date,'10/03/2021',105),60000,3,0)
-insert into Booking values('DP003','NV003','KH003','Deluxe',getdate(),convert(date,'04/05/2021',105),convert(date,'12/05/2021',105),60000,2,0)
-insert into Booking values('DP004','NV003','KH004','Deluxe',getdate(),convert(date,'08/01/2021',105),convert(date,'08/02/2021',105),60000,2,0)
+insert into Booking values('DP003','NV002','KH003','Deluxe',getdate(),convert(date,'04/05/2021',105),convert(date,'12/05/2021',105),60000,2,0)
+insert into Booking values('DP004','NV002','KH004','Deluxe',getdate(),convert(date,'08/01/2021',105),convert(date,'08/02/2021',105),60000,2,0)
 insert into Booking values('DP005','NV002','KH005','Suite',getdate(),convert(date,'25/08/2021',105),convert(date,'28/08/2021',105),80000,2,1)
 
 go
