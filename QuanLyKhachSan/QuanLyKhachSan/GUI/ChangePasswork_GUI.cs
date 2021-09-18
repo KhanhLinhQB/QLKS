@@ -71,9 +71,8 @@ namespace QuanLyKhachSan.GUI
             {
                 if(txtPass.Text == txtConfirmPass.Text)
                 {
-                    SqlDataAdapter da1 = new SqlDataAdapter("update Permission set password = N'" + txtPass.Text + "' where IdEmployee = N'" + txtmanv.Text + "' and password = N'" + txtOldPass.Text + "'" , cn);
-                    DataTable dt1 = new DataTable();
-                    da1.Fill(dt1);
+                    string query = "update Permission set password = N'" + txtPass.Text + "' where IdEmployee = N'" + txtmanv.Text + "'";
+                    db.ExecuteQuery(query);
                     MessageBox.Show("Đổi mật khẩu thành công");
                 }    
                 else
