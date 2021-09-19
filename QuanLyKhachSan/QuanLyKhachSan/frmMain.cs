@@ -45,7 +45,6 @@ namespace QuanLyKhachSan
             bbtnDSKH.Enabled = false;
             nbiThemkh.Enabled = false;
             nbiDatphong.Enabled = false;
-            nbiThongtinKH.Enabled = false;
             nbiQuanlyphong.Enabled = false;
         }
 

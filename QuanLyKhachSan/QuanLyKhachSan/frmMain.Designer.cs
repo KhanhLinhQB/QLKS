@@ -60,22 +60,18 @@
             this.rbpHethong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbgTaikhoan = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgGiaodien = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbgTrogiup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpTacvu = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbgNV = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbgKH = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbgPhong = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbpBaocao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rbgBaoCao = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbpAbout = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rbgAbout = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemTimeEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup_TacVuChinh = new DevExpress.XtraNavBar.NavBarGroup();
             this.nbiThemkh = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiDatphong = new DevExpress.XtraNavBar.NavBarItem();
-            this.nbiThongtinKH = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiQuanlyphong = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiCalendar = new DevExpress.XtraNavBar.NavBarItem();
             this.nbiCalculator = new DevExpress.XtraNavBar.NavBarItem();
@@ -128,8 +124,7 @@
             this.RibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbpHethong,
             this.rbpTacvu,
-            this.rbpBaocao,
-            this.rbpAbout});
+            this.rbpBaocao});
             this.RibbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemTimeEdit1});
             this.RibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
@@ -346,8 +341,7 @@
             // 
             this.rbpHethong.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rbgTaikhoan,
-            this.rpgGiaodien,
-            this.rbgTrogiup});
+            this.rpgGiaodien});
             this.rbpHethong.Name = "rbpHethong";
             this.rbpHethong.Text = "Hệ thống";
             // 
@@ -364,12 +358,6 @@
             this.rpgGiaodien.ItemLinks.Add(this.bbtnLogout);
             this.rpgGiaodien.Name = "rpgGiaodien";
             this.rpgGiaodien.Text = "Tài khoản";
-            // 
-            // rbgTrogiup
-            // 
-            this.rbgTrogiup.ItemLinks.Add(this.bbtnHelp);
-            this.rbgTrogiup.Name = "rbgTrogiup";
-            this.rbgTrogiup.Text = "Trợ giúp";
             // 
             // rbpTacvu
             // 
@@ -413,19 +401,6 @@
             this.rbgBaoCao.Name = "rbgBaoCao";
             this.rbgBaoCao.Text = "Báo cáo";
             // 
-            // rbpAbout
-            // 
-            this.rbpAbout.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rbgAbout});
-            this.rbpAbout.Name = "rbpAbout";
-            this.rbpAbout.Text = "Thông tin";
-            // 
-            // rbgAbout
-            // 
-            this.rbgAbout.ItemLinks.Add(this.bbtnAbout);
-            this.rbgAbout.Name = "rbgAbout";
-            this.rbgAbout.Text = "Thông tin";
-            // 
             // repositoryItemTimeEdit1
             // 
             this.repositoryItemTimeEdit1.AutoHeight = false;
@@ -438,11 +413,11 @@
             this.ribbonStatusBar1.ItemLinks.Add(this.barHeaderItem1);
             this.ribbonStatusBar1.ItemLinks.Add(this.time);
             this.ribbonStatusBar1.ItemLinks.Add(this.bandango);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 614);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 616);
             this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.RibbonControl;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(984, 30);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(984, 28);
             // 
             // navBarControl
             // 
@@ -453,7 +428,6 @@
             this.navBarControl.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.nbiThemkh,
             this.nbiDatphong,
-            this.nbiThongtinKH,
             this.nbiCalendar,
             this.nbiCalculator,
             this.nbiQuanlyphong});
@@ -461,7 +435,7 @@
             this.navBarControl.Margin = new System.Windows.Forms.Padding(4);
             this.navBarControl.Name = "navBarControl";
             this.navBarControl.OptionsNavPane.ExpandedWidth = 187;
-            this.navBarControl.Size = new System.Drawing.Size(187, 499);
+            this.navBarControl.Size = new System.Drawing.Size(187, 501);
             this.navBarControl.TabIndex = 2;
             this.navBarControl.Text = "navBarControl1";
             // 
@@ -472,7 +446,6 @@
             this.navBarGroup_TacVuChinh.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiThemkh),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiDatphong),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.nbiThongtinKH),
             new DevExpress.XtraNavBar.NavBarItemLink(this.nbiQuanlyphong)});
             this.navBarGroup_TacVuChinh.Name = "navBarGroup_TacVuChinh";
             // 
@@ -487,12 +460,6 @@
             this.nbiDatphong.Caption = "Đặt phòng";
             this.nbiDatphong.Name = "nbiDatphong";
             this.nbiDatphong.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiDatphong_LinkClicked);
-            // 
-            // nbiThongtinKH
-            // 
-            this.nbiThongtinKH.Caption = "Thông tin khách hàng";
-            this.nbiThongtinKH.Name = "nbiThongtinKH";
-            this.nbiThongtinKH.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.nbiThongtinKH_LinkClicked);
             // 
             // nbiQuanlyphong
             // 
@@ -517,7 +484,7 @@
             this.xtraTabControl.Location = new System.Drawing.Point(187, 115);
             this.xtraTabControl.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabControl.Name = "xtraTabControl";
-            this.xtraTabControl.Size = new System.Drawing.Size(797, 499);
+            this.xtraTabControl.Size = new System.Drawing.Size(797, 501);
             this.xtraTabControl.TabIndex = 3;
             this.xtraTabControl.SelectedPageChanged += new DevExpress.XtraTab.TabPageChangedEventHandler(this.xtraTabControl_SelectedPageChanged);
             this.xtraTabControl.CloseButtonClick += new System.EventHandler(this.xtraTabControl_CloseButtonClick);
@@ -584,17 +551,14 @@
         internal DevExpress.XtraBars.Ribbon.RibbonPage rbpHethong;
         internal DevExpress.XtraBars.Ribbon.RibbonPageGroup rbgTaikhoan;
         internal DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgGiaodien;
-        internal DevExpress.XtraBars.Ribbon.RibbonPageGroup rbgTrogiup;
         internal DevExpress.XtraBars.Ribbon.RibbonPage rbpTacvu;
         internal DevExpress.XtraBars.Ribbon.RibbonPage rbpBaocao;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraNavBar.NavBarControl navBarControl;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup_TacVuChinh;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl;
-        private DevExpress.XtraBars.Ribbon.RibbonPage rbpAbout;
         private DevExpress.XtraNavBar.NavBarItem nbiThemkh;
         private DevExpress.XtraNavBar.NavBarItem nbiDatphong;
-        private DevExpress.XtraNavBar.NavBarItem nbiThongtinKH;
         private DevExpress.XtraNavBar.NavBarItem nbiCalendar;
         private DevExpress.XtraNavBar.NavBarItem nbiCalculator;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
@@ -605,7 +569,6 @@
         private DevExpress.XtraBars.BarButtonItem bbtnDatPhong;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbgKH;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbgPhong;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup rbgAbout;
         private DevExpress.XtraBars.BarButtonItem bbtnAbout;
         private DevExpress.XtraBars.BarButtonItem bbtnDSNV;
         private DevExpress.XtraBars.BarButtonItem bbtnDSKH;
